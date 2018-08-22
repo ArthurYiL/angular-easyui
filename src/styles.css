@@ -1,1 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
+@import './angular-easyui-1.1.14/themes/material/easyui.css';
+@import './angular-easyui-1.1.14/themes/angular.css';
+@import './angular-easyui-1.1.14/themes/icon.css';
