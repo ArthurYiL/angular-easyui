@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-easyui';
+  title = 'Angular';
+  greeting = { 'id': 'baby7305', 'content': 'Hello World' };
 }
