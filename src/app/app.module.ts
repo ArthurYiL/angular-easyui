@@ -7,6 +7,11 @@ import { EasyUIModule } from 'ng-easyui/components/easyui/easyui.module';
 
 import { AppComponent } from './app.component';
 import { OfficialComponent } from './official/official.component';
+import { BasicComponent } from './calender/basic/basic.component';
+import { DisableDateComponent } from './calender/disable-date/disable-date.component';
+import { FirstDayOfWeekComponent } from './calender/first-day-of-week/first-day-of-week.component';
+import { WeekNumberComponent } from './calender/week-number/week-number.component';
+import { TemplateComponent } from './calender/template/template.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
@@ -16,7 +21,12 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    OfficialComponent
+    OfficialComponent,
+    BasicComponent,
+    DisableDateComponent,
+    FirstDayOfWeekComponent,
+    WeekNumberComponent,
+    TemplateComponent
   ],
   imports: [
     FormsModule,
