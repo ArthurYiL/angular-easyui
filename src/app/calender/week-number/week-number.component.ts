@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WeekNumberComponent implements OnInit {
 
+  value = new Date();
+
   constructor() { }
 
   ngOnInit() {

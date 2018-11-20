@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpModule } from '@angular/http';
 import { EasyUIModule } from 'ng-easyui/components/easyui/easyui.module';
 
 import { AppComponent } from './app.component';
@@ -15,7 +16,12 @@ import { TemplateComponent } from './calender/template/template.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'calender/basic', component: BasicComponent },
+  { path: 'calender/disable-date', component: DisableDateComponent },
+  { path: 'calender/first-day-of-week', component: FirstDayOfWeekComponent },
+  { path: 'calender/template', component: TemplateComponent },
+  { path: 'calender/week-number', component: WeekNumberComponent }
 ];
 
 @NgModule({
@@ -32,6 +38,7 @@ const appRoutes: Routes = [
     FormsModule,
     BrowserModule,
     BrowserAnimationsModule,
+    HttpModule,
     EasyUIModule,
     RouterModule.forRoot(
       appRoutes,

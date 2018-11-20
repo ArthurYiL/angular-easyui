@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DisableDateComponent implements OnInit {
 
+  value = new Date();
+  validator = (date) => {
+    if (date.getDay() === 1 || date.getDay() === 2) {
+      return true;
+    }
+    return false;
+  }
+
   constructor() { }
 
   ngOnInit() {

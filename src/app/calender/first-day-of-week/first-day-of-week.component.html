@@ -1,3 +1,6 @@
-<p>
-  first-day-of-week works!
-</p>
+<h2>First Day of Week</h2>
+<div style="margin-bottom:20px">
+  <eui-combobox [data]="data" [(ngModel)]="firstDay" [editable]="false"></eui-combobox>
+</div>
+<eui-calendar [(selection)]="value" [firstDay]="firstDay" style="width:250px;height:250px"></eui-calendar>
+<p>{{value}}</p>
