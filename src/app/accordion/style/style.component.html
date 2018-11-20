@@ -1,3 +1,8 @@
-<p>
-  style works!
-</p>
+<h2>Accordion Style</h2>
+<eui-accordion class="a1" [animate]="true">
+  <eui-accordion-panel *ngFor="let menu of menus" [title]="menu.text" iconCls="fa fa-{{menu.iconCls}}">
+    <div style="padding: 5px">
+      <a class="item" href="#" *ngFor="let item of menu.submenus">{{item}}</a>
+    </div>
+  </eui-accordion-panel>
+</eui-accordion>

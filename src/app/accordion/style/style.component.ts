@@ -7,6 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StyleComponent implements OnInit {
 
+  menus = [{
+    text: 'Forms',
+    iconCls: 'wpforms',
+    submenus: ['Form Element', 'Wizard', 'File Upload']
+  }, {
+    text: 'Mail',
+    iconCls: 'at',
+    submenus: ['Inbox', 'Sent', 'Trash']
+  }, {
+    text: 'Layout',
+    iconCls: 'table',
+    submenus: ['Panel', 'Accordion', 'Tabs']
+  }];
+
   constructor() { }
 
   ngOnInit() {

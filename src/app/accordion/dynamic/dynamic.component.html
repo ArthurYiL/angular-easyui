@@ -1,3 +1,10 @@
-<p>
-  dynamic works!
-</p>
+<h2>Dynamic Accordion</h2>
+<div style="margin-bottom:10px">
+  <eui-linkbutton iconCls="icon-add" (click)="add()">Add</eui-linkbutton>
+  <eui-linkbutton iconCls="icon-remove" (click)="remove(a.getSelectedIndex())">Remove</eui-linkbutton>
+</div>
+<eui-accordion #a [selectedIndex]="selectedIndex" style="height:250px">
+  <eui-accordion-panel *ngFor="let p of panels" [title]="p.title">
+    <p>{{p.content}}</p>
+  </eui-accordion-panel>
+</eui-accordion>
