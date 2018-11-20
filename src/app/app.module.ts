@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpModule } from '@angular/http';
 import { EasyUIModule } from 'ng-easyui/components/easyui/easyui.module';
 
 import { AppComponent } from './app.component';
@@ -11,7 +12,8 @@ import { BasicComponent } from './checkbox/basic/basic.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'checkbox/basic', component: BasicComponent }
 ];
 
 @NgModule({
@@ -24,6 +26,7 @@ const appRoutes: Routes = [
     FormsModule,
     BrowserModule,
     BrowserAnimationsModule,
+    HttpModule,
     EasyUIModule,
     RouterModule.forRoot(
       appRoutes,

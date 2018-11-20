@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BasicComponent implements OnInit {
 
+  values = null;
+
+  fruits = ['Apple', 'Orange', 'Banana'];
+
   constructor() { }
 
   ngOnInit() {
