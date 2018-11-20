@@ -1,3 +1,10 @@
-<p>
-  multiple works!
-</p>
+<h2>Multiple ComboTreeGrid</h2>
+<eui-combotreegrid style="width:300px" placeholder="Select a row" valueField="id" textField="name" [(ngModel)]="value" [data]="data"
+  [multiple]="true" [panelStyle]="{width:'500px'}" [textFormatter]="formatText">
+  <eui-treegrid>
+    <eui-grid-column field="name" title="Name"></eui-grid-column>
+    <eui-grid-column field="size" title="Size"></eui-grid-column>
+    <eui-grid-column field="date" title="Date"></eui-grid-column>
+  </eui-treegrid>
+</eui-combotreegrid>
+<p *ngIf="value">You selected: {{value}}</p>

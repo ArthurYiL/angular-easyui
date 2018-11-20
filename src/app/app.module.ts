@@ -13,7 +13,9 @@ import { MultipleComponent } from './combotreegrid/multiple/multiple.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'combotreegrid/basic', component: BasicComponent },
+  { path: 'combotreegrid/multiple', component: MultipleComponent }
 ];
 
 @NgModule({
