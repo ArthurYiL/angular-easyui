@@ -1,3 +1,10 @@
-<p>
-  sorting works!
-</p>
+<h2>DataGrid Sorting</h2>
+<eui-datagrid style="height:250px" [virtualScroll]="true" [data]="data" [total]="total" [pageNumber]="pageNumber" [pageSize]="pageSize"
+  [rowHeight]="rowHeight">
+  <eui-grid-column field="inv" title="Inv No" [sortable]="true"></eui-grid-column>
+  <eui-grid-column field="name" title="Name" [sortable]="true"></eui-grid-column>
+  <eui-grid-column field="amount" title="Amount" align="right" [sortable]="true"></eui-grid-column>
+  <eui-grid-column field="price" title="Price" align="right" [sortable]="true"></eui-grid-column>
+  <eui-grid-column field="cost" title="Cost" align="right" [sortable]="true"></eui-grid-column>
+  <eui-grid-column field="note" title="Note"></eui-grid-column>
+</eui-datagrid>

@@ -1,3 +1,15 @@
-<p>
-  pagination-layout works!
-</p>
+<h2>Pagination Layout</h2>
+<eui-datagrid style="height:250px" [pagination]="true" [data]="data" [total]="total" [pageNumber]="pageNumber" [pageSize]="pageSize"
+  [pageOptions]="pageOptions">
+  <eui-grid-column field="inv" title="Inv No"></eui-grid-column>
+  <eui-grid-column field="name" title="Name"></eui-grid-column>
+  <eui-grid-column field="amount" title="Amount" align="right"></eui-grid-column>
+  <eui-grid-column field="price" title="Price" align="right"></eui-grid-column>
+  <eui-grid-column field="cost" title="Cost" align="right"></eui-grid-column>
+  <eui-grid-column field="note" title="Note"></eui-grid-column>
+  <ng-template euiPageTemplate let-pager>
+    <eui-linkbutton plain="true" iconCls="icon-add"></eui-linkbutton>
+    <eui-linkbutton plain="true" iconCls="icon-remove"></eui-linkbutton>
+    <eui-textbox iconCls="icon-search" style="height:26px;margin-left:4px"></eui-textbox>
+  </ng-template>
+</eui-datagrid>

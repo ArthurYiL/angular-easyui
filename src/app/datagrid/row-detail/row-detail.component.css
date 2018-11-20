@@ -1,0 +1,13 @@
+.item {
+    height: 60px;
+    margin: 6px 30px;
+    text-align: left;
+}
+
+.item-img {
+    height: 60px;
+}
+
+.item-desp {
+    line-height: 30px;
+}

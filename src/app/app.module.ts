@@ -33,7 +33,29 @@ import { SelectionComponent } from './datagrid/selection/selection.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'datagrid/basic', component: BasicComponent },
+  { path: 'datagrid/cell-editing', component: CellEditingComponent },
+  { path: 'datagrid/column-group', component: ColumnGroupComponent },
+  { path: 'datagrid/dialog-editing', component: DialogEditingComponent },
+  { path: 'datagrid/filtering', component: FilteringComponent },
+  { path: 'datagrid/footer-rows', component: FooterRowsComponent },
+  { path: 'datagrid/frozen-column', component: FrozenColumnComponent },
+  { path: 'datagrid/frozen-column-advanced', component: FrozenColumnAdvancedComponent },
+  { path: 'datagrid/multiple-sorting', component: MultipleSortingComponent },
+  { path: 'datagrid/pagination', component: PaginationComponent },
+  { path: 'datagrid/pagination-layout', component: PaginationLayoutComponent },
+  { path: 'datagrid/pagination-lazy-load', component: PaginationLazyLoadComponent },
+  { path: 'datagrid/row-detail', component: RowDetailComponent },
+  { path: 'datagrid/row-editing', component: RowEditingComponent },
+  { path: 'datagrid/row-group', component: RowGroupComponent },
+  { path: 'datagrid/row-number', component: RowNumberComponent },
+  { path: 'datagrid/selection', component: SelectionComponent },
+  { path: 'datagrid/sorting', component: SortingComponent },
+  { path: 'datagrid/styling', component: StylingComponent },
+  { path: 'datagrid/templating', component: TemplateComponent },
+  { path: 'datagrid/virtual-scroll', component: VirtualScrollComponent },
+  { path: 'datagrid/virtual-scroll-lazy-load', component: VirtualScrollLazyLoadComponent }
 ];
 
 @NgModule({

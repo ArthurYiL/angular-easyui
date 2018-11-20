@@ -1,3 +1,21 @@
-<p>
-  row-editing works!
-</p>
+<h2>Row Editing</h2>
+<eui-datagrid [data]="data" [clickToEdit]="true" editMode="row" style="height:250px">
+  <eui-grid-column field="itemid" title="Item ID" [editable]="true"></eui-grid-column>
+  <eui-grid-column field="name" title="Name" [editable]="true"></eui-grid-column>
+  <eui-grid-column field="listprice" title="List Price" align="right" [editable]="true">
+    <ng-template euiEditTemplate let-row="row">
+      <eui-numberbox [(ngModel)]="row.listprice" precision="1"></eui-numberbox>
+    </ng-template>
+  </eui-grid-column>
+  <eui-grid-column field="unitcost" title="Unit Cost" align="right" [editable]="true">
+    <ng-template euiEditTemplate let-row="row">
+      <eui-numberbox [(ngModel)]="row.unitcost"></eui-numberbox>
+    </ng-template>
+  </eui-grid-column>
+  <eui-grid-column field="attr" title="Attribute" width="30%" [editable]="true"></eui-grid-column>
+  <eui-grid-column field="status" title="Status" align="center" [editable]="true">
+    <ng-template euiEditTemplate let-row="row">
+      <eui-checkbox [(ngModel)]="row.status" style="width:20px;height:20px"></eui-checkbox>
+    </ng-template>
+  </eui-grid-column>
+</eui-datagrid>

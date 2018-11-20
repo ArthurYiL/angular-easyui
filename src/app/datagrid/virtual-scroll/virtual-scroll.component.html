@@ -1,3 +1,11 @@
-<p>
-  virtual-scroll works!
-</p>
+<h2>Virtual Scroll</h2>
+<p>The virtual scroll can be used to display large amounts of records without paging.</p>
+<eui-datagrid style="height:250px" [virtualScroll]="true" [data]="data" [total]="total" [pageNumber]="pageNumber" [pageSize]="pageSize"
+  [rowHeight]="rowHeight">
+  <eui-grid-column field="inv" title="Inv No"></eui-grid-column>
+  <eui-grid-column field="name" title="Name"></eui-grid-column>
+  <eui-grid-column field="amount" title="Amount" align="right"></eui-grid-column>
+  <eui-grid-column field="price" title="Price" align="right"></eui-grid-column>
+  <eui-grid-column field="cost" title="Cost" align="right"></eui-grid-column>
+  <eui-grid-column field="note" title="Note"></eui-grid-column>
+</eui-datagrid>

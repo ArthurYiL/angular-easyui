@@ -1,3 +1,20 @@
-<p>
-  template works!
-</p>
+<h2>DataGrid Template</h2>
+<eui-datagrid [data]="data" style="height:250px">
+  <eui-grid-column field="itemid" title="Item ID"></eui-grid-column>
+  <eui-grid-column field="name" title="Name" width="30%">
+    <ng-template euiHeaderTemplate let-col>
+      <div class="item">
+        <div class="title">{{col.title}}</div>
+      </div>
+    </ng-template>
+    <ng-template euiCellTemplate let-row>
+      <div class="item">
+        <div class="title">{{row.name}}</div>
+        <div>{{row.attr}}</div>
+      </div>
+    </ng-template>
+  </eui-grid-column>
+  <eui-grid-column field="listprice" title="List Price" align="right"></eui-grid-column>
+  <eui-grid-column field="unitcost" title="Unit Cost" align="right"></eui-grid-column>
+  <eui-grid-column field="status" title="Status" align="center"></eui-grid-column>
+</eui-datagrid>
