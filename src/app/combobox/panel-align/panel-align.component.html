@@ -1,3 +1,13 @@
-<p>
-  panel-align works!
-</p>
+<h2>Panel Align</h2>
+<div class="smenu">
+  <input #r1 type="radio" name="groupname" checked (click)="palign='left'">
+  <label [for]="r1">Left</label>
+</div>
+<div class="smenu">
+  <input #r2 type="radio" name="groupname" (click)="palign='right'">
+  <label [for]="r2">Right</label>
+</div>
+<div style="margin:0 40px">
+  <label [for]="combo" align="top">Select a value:</label>
+  <eui-combobox #combo style="width:200px" [(ngModel)]="value" [data]="data" [editable]="false" [panelAlign]="palign" [panelStyle]="{width:'220px'}"></eui-combobox>
+</div>

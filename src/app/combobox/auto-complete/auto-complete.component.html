@@ -1,3 +1,5 @@
-<p>
-  auto-complete works!
-</p>
+<h2>AutoComplete</h2>
+<p>The suggestion data will be updated after typing a minimum number of characters</p>
+<label [for]="combo" align="top">Select a City:</label>
+<eui-combobox #combo placeholder="Search a City..." style="width:300px" [lazy]="true" [data]="data" [limitToList]="false"
+  [hasDownArrow]="false" (filterChange)="onFilterChange($event)"></eui-combobox>

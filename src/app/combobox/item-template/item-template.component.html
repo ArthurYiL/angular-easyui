@@ -1,3 +1,7 @@
-<p>
-  item-template works!
-</p>
+<h2>Item Template</h2>
+<label [for]="combo" align="top">Select a value:</label>
+<eui-combobox #combo [(ngModel)]="value" [data]="data" [editable]="false">
+  <ng-template euiItemTemplate let-item>
+    {{item.value}} - {{item.text}}
+  </ng-template>
+</eui-combobox>

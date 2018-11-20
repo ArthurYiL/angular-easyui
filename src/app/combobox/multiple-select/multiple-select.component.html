@@ -1,3 +1,4 @@
-<p>
-  multiple-select works!
-</p>
+<h2>Multiple Select</h2>
+<label [for]="combo" align="top">Select values:</label>
+<eui-combobox #combo style="width:300px" [(ngModel)]="value" [data]="data" [multiple]="true" [textFormatter]="formatText"></eui-combobox>
+<p *ngIf="value">Selected values: {{value | json}}</p>

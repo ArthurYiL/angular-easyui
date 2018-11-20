@@ -3,6 +3,8 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpModule } from '@angular/http';
+import { JsonpModule } from '@angular/http';
 import { EasyUIModule } from 'ng-easyui/components/easyui/easyui.module';
 
 import { AppComponent } from './app.component';
@@ -19,7 +21,16 @@ import { VirtualScrollLazyLoadComponent } from './combobox/virtual-scroll-lazy-l
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'combobox/addons', component: AddonsComponent },
+  { path: 'combobox/auto-complete', component: AutoCompleteComponent },
+  { path: 'combobox/basic', component: BasicComponent },
+  { path: 'combobox/item-template', component: ItemTemplateComponent },
+  { path: 'combobox/lazy-filtering', component: LazyFilteringComponent },
+  { path: 'combobox/multiple-select', component: MultipleSelectComponent },
+  { path: 'combobox/panel-align', component: PanelAlignComponent },
+  { path: 'combobox/virtual-scroll', component: VirtualScrollComponent },
+  { path: 'combobox/virtual-scroll-lazy-load', component: VirtualScrollLazyLoadComponent }
 ];
 
 @NgModule({
@@ -40,6 +51,8 @@ const appRoutes: Routes = [
     FormsModule,
     BrowserModule,
     BrowserAnimationsModule,
+    HttpModule,
+    JsonpModule,
     EasyUIModule,
     RouterModule.forRoot(
       appRoutes,

@@ -1,3 +1,7 @@
-<p>
-  addons works!
-</p>
+<h2>ComboBox Addons</h2>
+<label [for]="combo" align="top">Select a hero:</label>
+<eui-combobox #combo [(ngModel)]="value" [data]="data" [editable]="false" iconCls="icon-man" iconAlign="left">
+  <eui-addon>
+    <span *ngIf="combo.value!=null" class="textbox-icon icon-clear" title="Clear value" (click)="combo.value=null"></span>
+  </eui-addon>
+</eui-combobox>
