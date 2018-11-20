@@ -7,6 +7,11 @@ import { EasyUIModule } from 'ng-easyui/components/easyui/easyui.module';
 
 import { AppComponent } from './app.component';
 import { OfficialComponent } from './official/official.component';
+import { BasicComponent } from './accordion/basic/basic.component';
+import { MultipleComponent } from './accordion/multiple/multiple.component';
+import { DynamicComponent } from './accordion/dynamic/dynamic.component';
+import { CustomComponent } from './accordion/custom/custom.component';
+import { StyleComponent } from './accordion/style/style.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
@@ -16,7 +21,12 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    OfficialComponent
+    OfficialComponent,
+    BasicComponent,
+    MultipleComponent,
+    DynamicComponent,
+    CustomComponent,
+    StyleComponent
   ],
   imports: [
     FormsModule,
