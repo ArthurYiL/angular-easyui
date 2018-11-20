@@ -1,3 +1,5 @@
-<p>
-  basic works!
-</p>
+<h2>Basic ComboTree</h2>
+<eui-combotree [(ngModel)]="value" [data]="data" placeholder="Select a node">
+  <eui-tree></eui-tree>
+</eui-combotree>
+<p *ngIf="value">You selected: {{value}}</p>

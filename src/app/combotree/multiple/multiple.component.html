@@ -1,3 +1,5 @@
-<p>
-  multiple works!
-</p>
+<h2>Multiple ComboTree</h2>
+<eui-combotree style="width:300px" [(ngModel)]="value" [data]="data" [multiple]="true" [textFormatter]="formatText">
+  <eui-tree></eui-tree>
+</eui-combotree>
+<p *ngIf="value">You selected: {{value}}</p>

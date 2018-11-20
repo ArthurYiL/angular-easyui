@@ -14,7 +14,10 @@ import { TemplateComponent } from './combotree/template/template.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'combotree/basic', component: BasicComponent },
+  { path: 'combotree/multiple', component: MultipleComponent },
+  { path: 'combotree/template', component: TemplateComponent }
 ];
 
 @NgModule({
