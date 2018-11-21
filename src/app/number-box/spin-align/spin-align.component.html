@@ -1,3 +1,17 @@
-<p>
-  spin-align works!
-</p>
+<h2>Spin Align</h2>
+<div style="margin-bottom:10px">
+  <label [for]="n1" align="top">Left:</label>
+  <eui-numberbox #n1 value="100" spinAlign="left"></eui-numberbox>
+</div>
+<div style="margin-bottom:10px">
+  <label [for]="n2" align="top">Right:</label>
+  <eui-numberbox #n2 value="100" spinAlign="right"></eui-numberbox>
+</div>
+<div style="margin-bottom:10px">
+  <label [for]="n3" align="top">Horizontal:</label>
+  <eui-numberbox #n3 value="100" spinAlign="horizontal"></eui-numberbox>
+</div>
+<div style="margin-bottom:10px">
+  <label [for]="n4" align="top">Vertical:</label>
+  <eui-numberbox #n4 value="100" spinAlign="vertical" [inputStyle]="{textAlign:'center'}" style="width:50px;height:80px"></eui-numberbox>
+</div>

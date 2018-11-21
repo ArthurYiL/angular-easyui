@@ -1,3 +1,9 @@
-<p>
-  format works!
-</p>
+<h2>Format NumberBox</h2>
+<div style="width:100%;max-width:400px;">
+  <div *ngFor="let n of numbers" style="margin-bottom:10px">
+    <label [for]="nb" align="top">{{n.label}}</label>
+    <eui-numberbox #nb style="width:80%" [value]="1234567.89" [precision]="2" [spinners]="false" [groupSeparator]="n.groupSeparator"
+      [decimalSeparator]="n.decimalSeparator" [prefix]="n.prefix || ''" [suffix]="n.suffix || ''">
+    </eui-numberbox>
+  </div>
+</div>

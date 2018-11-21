@@ -1,3 +1,9 @@
-<p>
-  spinner works!
-</p>
+<h2>Number Spinner</h2>
+<div style="margin-bottom:10px">
+  <label [for]="n1" align="top">Increment:</label>
+  <eui-numberbox #n1 [increment]="10" [value]="100"></eui-numberbox>
+</div>
+<div style="margin-bottom:10px">
+  <label [for]="n2" align="top">Range:</label>
+  <eui-numberbox #n2 [increment]="10" [value]="100" [min]="10" [max]="200"></eui-numberbox>
+</div>

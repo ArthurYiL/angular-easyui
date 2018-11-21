@@ -1,3 +1,21 @@
-<p>
-  addon works!
-</p>
+<h2>NumberBox Addons</h2>
+<div style="margin-bottom:10px">
+  <label [for]="n1" align="top">Icon:</label>
+  <eui-numberbox #n1 value="100" iconCls="icon-man" iconAlign="left"></eui-numberbox>
+</div>
+<div style="margin-bottom:10px">
+  <label [for]="n2" align="top">Clear button:</label>
+  <eui-numberbox #n2 value="100">
+    <eui-addon>
+      <span *ngIf="n2.value!=null" class="textbox-icon icon-clear" (click)="n2.value=null"></span>
+    </eui-addon>
+  </eui-numberbox>
+</div>
+<div style="margin-bottom:10px">
+  <label [for]="n3" align="top">Button on left:</label>
+  <eui-numberbox #n3 value="100">
+    <eui-addon align="left">
+      <eui-linkbutton iconCls="icon-search" [btnStyle]="{borderRadius:0,borderWidth:'0 1px 0 0',width:'70px',height:'30px'}">Search</eui-linkbutton>
+    </eui-addon>
+  </eui-numberbox>
+</div>
