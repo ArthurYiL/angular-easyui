@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BasicComponent implements OnInit {
 
+  filename: string = null;
+
+  onFileSelect(event) {
+    this.filename = event[0].name;
+  }
+
   constructor() { }
 
   ngOnInit() {

@@ -1,3 +1,17 @@
-<p>
-  select works!
-</p>
+<h2>Select Files</h2>
+<eui-panel style="width:600px">
+  <eui-panel-header>
+    <eui-filebutton accept="image/*" style="width:80px" [multiple]="true" [autoUpload]="false" (select)="onFileSelect($event)">Select Files...</eui-filebutton>
+    <eui-linkbutton (click)="files=[]" style="width:80px">Clear</eui-linkbutton>
+  </eui-panel-header>
+  <eui-datalist [data]="files" [border]="false" style="min-height:100px">
+    <ng-template euiItemTemplate let-row>
+      <div class="fileitem">
+        <img [src]="row.url">
+        <div class="name">{{row.name}}</div>
+        <div class="size">{{row.size}}</div>
+        <eui-linkbutton iconCls="icon-clear" [plain]="true" (click)="removeFile(row)"></eui-linkbutton>
+      </div>
+    </ng-template>
+  </eui-datalist>
+</eui-panel>

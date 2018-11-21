@@ -13,7 +13,9 @@ import { SelectComponent } from './fileButton/select/select.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'file-button/basic', component: BasicComponent },
+  { path: 'file-button/select', component: SelectComponent }
 ];
 
 @NgModule({
