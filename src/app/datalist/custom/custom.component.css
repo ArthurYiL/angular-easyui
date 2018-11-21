@@ -1,0 +1,15 @@
+.dataitem {
+    width: 120px;
+    height: 120px;
+    float: left;
+    margin: 6px;
+}
+
+.product {
+    text-align: center;
+}
+
+.product img {
+    height: 80px;
+    padding: 10px;
+}

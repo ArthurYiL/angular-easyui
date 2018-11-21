@@ -1,3 +1,10 @@
-<p>
-  custom works!
-</p>
+<h2>Custom DataList</h2>
+<eui-datalist style="width:550px;height:250px" [data]="data" [(selection)]="selection" selectionMode="single" itemCls="dataitem">
+  <ng-template euiItemTemplate let-row>
+    <div class="product">
+      <img src="https://www.jeasyui.com/tutorial/datagrid/images/{{row.itemid}}.png">
+      <p>{{row.name}}</p>
+    </div>
+  </ng-template>
+</eui-datalist>
+<p *ngIf="selection">You selected: {{selection.name}}</p>

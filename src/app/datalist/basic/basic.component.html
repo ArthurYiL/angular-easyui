@@ -1,3 +1,14 @@
-<p>
-  basic works!
-</p>
+<h2>Basic DataList</h2>
+<eui-datalist style="width:550px;height:250px" [data]="data" [(selection)]="selection" selectionMode="single">
+  <ng-template euiItemTemplate let-row>
+    <div class="product f-row">
+      <img src="https://www.jeasyui.com/tutorial/datagrid/images/{{row.itemid}}.png">
+      <div class="detail">
+        <p>{{row.itemid}} - {{row.name}}</p>
+        <p>{{row.attr}}</p>
+        <p>List Price: {{row.listprice}}</p>
+      </div>
+    </div>
+  </ng-template>
+</eui-datalist>
+<p *ngIf="selection">You selected: {{selection.name}}</p>

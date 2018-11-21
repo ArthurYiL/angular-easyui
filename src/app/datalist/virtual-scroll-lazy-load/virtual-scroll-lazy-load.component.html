@@ -1,3 +1,16 @@
-<p>
-  virtual-scroll-lazy-load works!
-</p>
+<h2>Virtual Scroll - Lazy Load</h2>
+<eui-datalist style="width:600px;height:250px" [data]="data" [total]="total" [virtualScroll]="true" [rowHeight]="75" [lazy]="true"
+  [loading]="loading" [pageNumber]="pageNumber" [pageSize]="pageSize" [(selection)]="selection" idField="inv" selectionMode="single"
+  (pageChange)="onPageChange($event)">
+  <ng-template euiItemTemplate let-row let-rowIndex="rowIndex">
+    <div class="product">
+      <div class="num">{{rowIndex+1}}</div>
+      <div class="detail">
+        <p>{{row.inv}} - {{row.name}}</p>
+        <p>Amount: {{row.amount}}</p>
+        <p>Price: {{row.price}}</p>
+      </div>
+    </div>
+  </ng-template>
+</eui-datalist>
+<p *ngIf="selection">You selected: {{selection.name}}</p>

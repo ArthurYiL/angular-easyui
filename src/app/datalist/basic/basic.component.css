@@ -1,0 +1,13 @@
+.product .detail {
+    align-self: center;
+}
+
+.product img {
+    height: 100px;
+    padding: 10px;
+}
+
+.product p {
+    margin: 0;
+    padding: 6px 0;
+}

@@ -17,7 +17,13 @@ import { VirtualScrollLazyLoadComponent } from './datalist/virtual-scroll-lazy-l
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'datalist/basic', component: BasicComponent },
+  { path: 'datalist/custom', component: CustomComponent },
+  { path: 'datalist/pagination', component: PaginationComponent },
+  { path: 'datalist/pagination-lazy-load', component: PaginationLazyLoadComponent },
+  { path: 'datalist/virtual-scroll', component: VirtualScrollComponent },
+  { path: 'datalist/virtual-scroll-lazy-load', component: VirtualScrollLazyLoadComponent }
 ];
 
 @NgModule({

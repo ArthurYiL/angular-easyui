@@ -1,3 +1,15 @@
-<p>
-  pagination-lazy-load works!
-</p>
+<h2>DataList Pagination - Lazy Load</h2>
+<eui-datalist style="width:600px;height:250px" [data]="data" [total]="total" [pagination]="true" [lazy]="true" [loading]="loading"
+  [pageNumber]="pageNumber" [pageSize]="pageSize" [(selection)]="selection" idField="inv" selectionMode="single" (pageChange)="onPageChange($event)">
+  <ng-template euiItemTemplate let-row let-rowIndex="rowIndex">
+    <div class="product">
+      <div class="num">{{rowIndex+1}}</div>
+      <div class="detail">
+        <p>{{row.inv}} - {{row.name}}</p>
+        <p>Amount: {{row.amount}}</p>
+        <p>Price: {{row.price}}</p>
+      </div>
+    </div>
+  </ng-template>
+</eui-datalist>
+<p *ngIf="selection">You selected: {{selection.name}}</p>
