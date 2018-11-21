@@ -8,6 +8,11 @@ import { EasyUIModule } from 'ng-easyui/components/easyui/easyui.module';
 
 import { AppComponent } from './app.component';
 import { OfficialComponent } from './official/official.component';
+import { BasicComponent } from './dialog/basic/basic.component';
+import { ToolbarButtonComponent } from './dialog/toolbar-button/toolbar-button.component';
+import { NoBorderComponent } from './dialog/no-border/no-border.component';
+import { CustomStyleComponent } from './dialog/custom-style/custom-style.component';
+import { DrggableResizableComponent } from './dialog/drggable-resizable/drggable-resizable.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
@@ -17,7 +22,12 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    OfficialComponent
+    OfficialComponent,
+    BasicComponent,
+    ToolbarButtonComponent,
+    NoBorderComponent,
+    CustomStyleComponent,
+    DrggableResizableComponent
   ],
   imports: [
     FormsModule,
