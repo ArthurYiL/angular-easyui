@@ -18,7 +18,14 @@ import { StyleComponent } from './link-button/style/style.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'link-button/basic', component: BasicComponent },
+  { path: 'link-button/group', component: GroupComponent },
+  { path: 'link-button/icon-align', component: IconAlignComponent },
+  { path: 'link-button/plain', component: PlainComponent },
+  { path: 'link-button/size', component: SizeComponent },
+  { path: 'link-button/style', component: StyleComponent },
+  { path: 'link-button/toggle', component: ToggleComponent }
 ];
 
 @NgModule({
