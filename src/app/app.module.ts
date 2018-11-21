@@ -8,6 +8,9 @@ import { EasyUIModule } from 'ng-easyui/components/easyui/easyui.module';
 
 import { AppComponent } from './app.component';
 import { OfficialComponent } from './official/official.component';
+import { BasicComponent } from './datebox/basic/basic.component';
+import { FormatComponent } from './datebox/format/format.component';
+import { TemplateComponent } from './datebox/template/template.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
@@ -17,7 +20,10 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    OfficialComponent
+    OfficialComponent,
+    BasicComponent,
+    FormatComponent,
+    TemplateComponent
   ],
   imports: [
     FormsModule,
