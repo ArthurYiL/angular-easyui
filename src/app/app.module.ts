@@ -14,7 +14,10 @@ import { CustomComponent } from './messager/custom/custom.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'messager/alert', component: AlertComponent },
+  { path: 'messager/custom', component: CustomComponent },
+  { path: 'messager/interactive', component: InteractiveComponent }
 ];
 
 @NgModule({
