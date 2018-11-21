@@ -8,6 +8,11 @@ import { EasyUIModule } from 'ng-easyui/components/easyui/easyui.module';
 
 import { AppComponent } from './app.component';
 import { OfficialComponent } from './official/official.component';
+import { BasicComponent } from './number-box/basic/basic.component';
+import { FormatComponent } from './number-box/format/format.component';
+import { SpinnerComponent } from './number-box/spinner/spinner.component';
+import { SpinAlignComponent } from './number-box/spin-align/spin-align.component';
+import { AddonComponent } from './number-box/addon/addon.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
@@ -17,7 +22,12 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    OfficialComponent
+    OfficialComponent,
+    BasicComponent,
+    FormatComponent,
+    SpinnerComponent,
+    SpinAlignComponent,
+    AddonComponent
   ],
   imports: [
     FormsModule,
