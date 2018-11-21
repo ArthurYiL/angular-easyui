@@ -8,6 +8,13 @@ import { EasyUIModule } from 'ng-easyui/components/easyui/easyui.module';
 
 import { AppComponent } from './app.component';
 import { OfficialComponent } from './official/official.component';
+import { BasicComponent } from './link-button/basic/basic.component';
+import { PlainComponent } from './link-button/plain/plain.component';
+import { SizeComponent } from './link-button/size/size.component';
+import { IconAlignComponent } from './link-button/icon-align/icon-align.component';
+import { ToggleComponent } from './link-button/toggle/toggle.component';
+import { GroupComponent } from './link-button/group/group.component';
+import { StyleComponent } from './link-button/style/style.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
@@ -17,7 +24,14 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    OfficialComponent
+    OfficialComponent,
+    BasicComponent,
+    PlainComponent,
+    SizeComponent,
+    IconAlignComponent,
+    ToggleComponent,
+    GroupComponent,
+    StyleComponent
   ],
   imports: [
     FormsModule,
