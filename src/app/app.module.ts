@@ -8,6 +8,8 @@ import { EasyUIModule } from 'ng-easyui/components/easyui/easyui.module';
 
 import { AppComponent } from './app.component';
 import { OfficialComponent } from './official/official.component';
+import { DialogEditingComponent } from './datagrid/dialog-editing/dialog-editing.component';
+import { EditFormComponent } from './datagrid/edit-form/edit-form.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
@@ -17,7 +19,9 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    OfficialComponent
+    OfficialComponent,
+    DialogEditingComponent,
+    EditFormComponent
   ],
   imports: [
     FormsModule,
