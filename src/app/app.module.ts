@@ -13,7 +13,9 @@ import { AlignComponent } from './menu-button/align/align.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'menu/align', component: AlignComponent },
+  { path: 'menu/basic', component: BasicComponent }
 ];
 
 @NgModule({
