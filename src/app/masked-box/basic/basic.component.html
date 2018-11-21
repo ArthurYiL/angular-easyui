@@ -1,3 +1,14 @@
-<p>
-  basic works!
-</p>
+<h2>Basic MaskedBox</h2>
+<p>The maskedbox enforces its structure as the user types.</p>
+<div style="margin-bottom:10px">
+  <label [for]="m1" align="top">Phone Number:</label>
+  <eui-maskedbox #m1 mask="(999) 999-9999"></eui-maskedbox>
+</div>
+<div style="margin-bottom:10px">
+  <label [for]="m2" align="top">Credit Card:</label>
+  <eui-maskedbox #m2 mask="9999 9999 9999 9999"></eui-maskedbox>
+</div>
+<div style="margin-bottom:10px">
+  <label [for]="m3" align="top">Percent:</label>
+  <eui-maskedbox #m3 mask="99%"></eui-maskedbox>
+</div>
