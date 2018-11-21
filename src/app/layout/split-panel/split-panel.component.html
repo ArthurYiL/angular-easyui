@@ -1,3 +1,20 @@
-<p>
-  split-panel works!
-</p>
+<h2>Split Panel</h2>
+<eui-layout style="width:700px;height:250px;">
+  <eui-layout-panel region="west" [bodyStyle]="{padding:'5px'}" style="width:150px;">
+    <eui-tree [data]="menuData"></eui-tree>
+  </eui-layout-panel>
+  <eui-tabs style="height:100%">
+    <eui-tab-panel [title]="'Tab1'" [bodyStyle]="{display:'flex',padding:'5px'}">
+      <eui-datagrid [data]="gridData" class="f-full">
+        <eui-grid-column field="itemid" title="Item ID"></eui-grid-column>
+        <eui-grid-column field="name" title="Name"></eui-grid-column>
+        <eui-grid-column field="listprice" title="List Price" align="right"></eui-grid-column>
+        <eui-grid-column field="unitcost" title="Unit Cost" align="right"></eui-grid-column>
+        <eui-grid-column field="attr" title="Attribute" width="30%"></eui-grid-column>
+        <eui-grid-column field="status" title="Status" align="center"></eui-grid-column>
+      </eui-datagrid>
+    </eui-tab-panel>
+    <eui-tab-panel [title]="'Tab2'"></eui-tab-panel>
+    <eui-tab-panel [title]="'Tab3'"></eui-tab-panel>
+  </eui-tabs>
+</eui-layout>

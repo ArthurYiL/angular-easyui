@@ -1,3 +1,6 @@
-<p>
-  app works!
-</p>
+<app-layout [menus]="menus" [title]="'My System'" (itemClick)="onItemClick($event)">
+  <div style="padding:20px">
+    <p *ngIf="selectedMenu">{{selectedMenu.text}}</p>
+    <p *ngIf="!selectedMenu">Content.</p>
+  </div>
+</app-layout>
