@@ -1,3 +1,15 @@
-<p>
-  custom works!
-</p>
+<h2>Custom Messager</h2>
+<eui-linkbutton (click)="alert()">Alert</eui-linkbutton>
+<eui-linkbutton (click)="confirm()">Confirm</eui-linkbutton>
+<eui-messager [showHeader]="false" borderType="none">
+  <ng-template euiBodyTemplate let-messager>
+    <div class="m-content">
+      <h2>{{messager.title}}</h2>
+      <p>{{messager.msg}}</p>
+      <div class="m-buttons">
+        <eui-linkbutton *ngFor="let button of messager.buttons" [text]="button.text" (click)="messager.closeDialog(button)">
+        </eui-linkbutton>
+      </div>
+    </div>
+  </ng-template>
+</eui-messager>
