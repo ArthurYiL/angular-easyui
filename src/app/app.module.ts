@@ -8,6 +8,8 @@ import { EasyUIModule } from 'ng-easyui/components/easyui/easyui.module';
 
 import { AppComponent } from './app.component';
 import { OfficialComponent } from './official/official.component';
+import { ReactiveComponent } from './form/reactive/reactive.component';
+import { TemplateDrivenComponent } from './form/template-driven/template-driven.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
@@ -17,7 +19,9 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    OfficialComponent
+    OfficialComponent,
+    ReactiveComponent,
+    TemplateDrivenComponent
   ],
   imports: [
     FormsModule,
