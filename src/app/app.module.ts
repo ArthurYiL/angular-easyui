@@ -12,7 +12,8 @@ import { BasicComponent } from './masked-box/basic/basic.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'masked-box/basic', component: BasicComponent }
 ];
 
 @NgModule({
