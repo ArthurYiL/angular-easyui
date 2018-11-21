@@ -13,7 +13,9 @@ import { ShoppingComponent } from './droppable/shopping/shopping.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'droppable/basic', component: BasicComponent },
+  { path: 'droppable/shopping', component: ShoppingComponent }
 ];
 
 @NgModule({

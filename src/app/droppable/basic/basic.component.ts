@@ -7,6 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BasicComponent implements OnInit {
 
+  dropped: boolean = false;
+  isover: boolean = false;
+
+  onDragEnter() {
+    this.isover = true;
+  }
+
+  onDragLeave() {
+    this.isover = false;
+  }
+
+  onDrop() {
+    this.dropped = true;
+  }
+
   constructor() { }
 
   ngOnInit() {

@@ -1,0 +1,32 @@
+.dataitem {
+    width: 120px;
+    height: 130px;
+    float: left;
+    margin: 6px;
+}
+
+.product {
+    text-align: center;
+}
+
+.product img {
+    height: 80px;
+    padding: 10px;
+}
+
+.product p {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.product-proxy {
+    width: 120px;
+    height: 130px;
+    background: #FBEC88;
+    border: 1px solid #ccc;
+    opacity: 0.6;
+}
+
+.over {
+    border: 1px solid red;
+}

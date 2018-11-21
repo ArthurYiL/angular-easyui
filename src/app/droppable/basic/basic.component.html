@@ -1,3 +1,8 @@
-<p>
-  basic works!
-</p>
+<h2>Basic Droppable</h2>
+<div class="dragitem" euiDraggable>
+  <p style="text-align:center">Drag me</p>
+</div>
+<div class="droparea" euiDroppable [class.over]="isover" [class.dropped]="dropped" (dragEnter)="onDragEnter()" (dragLeave)="onDragLeave()"
+  (drop)="onDrop()">
+  <p style="text-align:center">Drop here</p>
+</div>
