@@ -1,3 +1,24 @@
-<p>
-  reactive works!
-</p>
+<h2>Reactive Form</h2>
+<form novalidate [formGroup]="user" (ngSubmit)="submitForm(user.value)">
+  <div style="margin-bottom:20px">
+    <label [for]="name" align="top">Name:</label>
+    <eui-textbox #name formControlName="name" [invalid]="user.get('name').invalid"></eui-textbox>
+    <div class="error" *ngIf="user.get('name').hasError('required')">This field is required.</div>
+  </div>
+  <div style="margin-bottom:20px">
+    <label [for]="email" align="top">Email:</label>
+    <eui-textbox #email formControlName="email" [invalid]="user.get('email').invalid"></eui-textbox>
+    <div class="error" *ngIf="user.get('email').hasError('pattern')">Please enter a valid email address.</div>
+  </div>
+  <div style="margin-bottom:20px">
+    <label [for]="hero" align="top">Select a hero:</label>
+    <eui-combobox #hero formControlName="hero" [data]="heroes"></eui-combobox>
+  </div>
+  <div style="margin-bottom:20px">
+    <eui-checkbox #accept formControlName="accept"></eui-checkbox>
+    <label [for]="accept">Accept Me</label>
+  </div>
+  <div style="margin-bottom:20px">
+    <eui-linkbutton [disabled]="user.invalid" (click)="submitForm(user.value)">Submit</eui-linkbutton>
+  </div>
+</form>

@@ -1,3 +1,25 @@
-<p>
-  template-driven works!
-</p>
+<h2>Template Driven Form</h2>
+<form #form="ngForm" (ngSubmit)="submitForm(form.value)">
+  <div style="margin-bottom:20px">
+    <label [for]="named" align="top">Name:</label>
+    <eui-textbox #named [(ngModel)]="user.name" [invalid]="formErrors.name" name="name" required></eui-textbox>
+    <div class="error">{{formErrors.name}}</div>
+  </div>
+  <div style="margin-bottom:20px">
+    <label [for]="email" align="top">Email:</label>
+    <eui-textbox #email [(ngModel)]="user.email" [invalid]="formErrors.email" name="email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"></eui-textbox>
+    <div class="error">{{formErrors.email}}</div>
+  </div>
+  <div style="margin-bottom:20px">
+    <label [for]="hero" align="top">Select a hero:</label>
+    <eui-combobox #hero [(ngModel)]="user.hero" [data]="heroes" name="hero"></eui-combobox>
+    <div class="error">{{formErrors.email}}</div>
+  </div>
+  <div style="margin-bottom:20px">
+    <eui-checkbox #accept [(ngModel)]="user.accept" name="accept"></eui-checkbox>
+    <label [for]="accept">Accept Me</label>
+  </div>
+  <div style="margin-bottom:20px">
+    <eui-linkbutton [disabled]="!form.valid" (click)="submitForm(form.value)">Submit</eui-linkbutton>
+  </div>
+</form>
