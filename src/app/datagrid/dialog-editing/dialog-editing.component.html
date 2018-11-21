@@ -1,3 +1,17 @@
-<p>
-  dialog-editing works!
-</p>
+<h2>Dialog Editing</h2>
+<eui-linkbutton (click)="onAddRow()" iconCls="icon-add" style="margin-bottom:10px">Add New</eui-linkbutton>
+<eui-datagrid [data]="data" style="height1:250px">
+  <eui-grid-column field="itemid" title="Item ID"></eui-grid-column>
+  <eui-grid-column field="name" title="Name"></eui-grid-column>
+  <eui-grid-column field="listprice" title="List Price" align="right"></eui-grid-column>
+  <eui-grid-column field="unitcost" title="Unit Cost" align="right"></eui-grid-column>
+  <eui-grid-column field="attr" title="Attribute" width="30%"></eui-grid-column>
+  <eui-grid-column title="Commands" align="center" width="100">
+    <ng-template euiCellTemplate let-row>
+      <eui-linkbutton btnCls="c5" (click)="onEditRow(row)">Edit</eui-linkbutton>
+      <eui-linkbutton btnCls="c1" (click)="onDeleteRow(row)">Delete</eui-linkbutton>
+    </ng-template>
+  </eui-grid-column>
+</eui-datagrid>
+<eui-edit-form [closed]="closed" [isNewRow]="isNewRow" [row]="editingRow" (save)="onSaveRow($event)" (cancel)="closed=true">
+</eui-edit-form>
