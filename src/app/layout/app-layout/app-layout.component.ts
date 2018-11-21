@@ -1,6 +1,5 @@
 import { Component, OnInit, Input, ViewChild, ViewEncapsulation, Output, EventEmitter } from '@angular/core';
 import { LayoutComponent } from 'ng-easyui/components/layout/layout.component';
-// import { LayoutComponent } from '../easyui/layout/layout.component';
 
 @Component({
   selector: 'app-layout',
