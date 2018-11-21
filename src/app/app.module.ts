@@ -14,7 +14,10 @@ import { HandleComponent } from './draggable/handle/handle.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'draggable/basic', component: BasicComponent },
+  { path: 'draggable/constrain', component: ConstrainComponent },
+  { path: 'draggable/handle', component: HandleComponent }
 ];
 
 @NgModule({

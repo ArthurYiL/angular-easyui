@@ -1,3 +1,6 @@
-<p>
-  constrain works!
-</p>
+<h2>Constrain Draggable</h2>
+<eui-panel [bodyStyle]="{position:'relative'}" [style.width.px]="containerWidth" [style.height.px]="containerHeight">
+  <div euiDraggable style="border:1px solid #ccc" [style.width.px]="dragWidth" [style.height.px]="dragHeight" (drag)="onDrag($event)">
+    <p style="text-align:center">Drag Me</p>
+  </div>
+</eui-panel>
