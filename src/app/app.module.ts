@@ -8,6 +8,9 @@ import { EasyUIModule } from 'ng-easyui/components/easyui/easyui.module';
 
 import { AppComponent } from './app.component';
 import { OfficialComponent } from './official/official.component';
+import { AlertComponent } from './messager/alert/alert.component';
+import { InteractiveComponent } from './messager/interactive/interactive.component';
+import { CustomComponent } from './messager/custom/custom.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
@@ -17,7 +20,10 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    OfficialComponent
+    OfficialComponent,
+    AlertComponent,
+    InteractiveComponent,
+    CustomComponent
   ],
   imports: [
     FormsModule,
