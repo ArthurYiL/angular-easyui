@@ -14,7 +14,10 @@ import { TemplateComponent } from './pagination/template/template.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'pagination/basic', component: BasicComponent },
+  { path: 'pagination/layout', component: LayoutComponent },
+  { path: 'pagination/template', component: TemplateComponent }
 ];
 
 @NgModule({
