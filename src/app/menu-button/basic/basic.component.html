@@ -1,3 +1,38 @@
-<p>
-  basic works!
-</p>
+<h2>Basic MenuButton</h2>
+<eui-panel [bodyStyle]="{padding:'5px'}">
+  <eui-linkbutton [plain]="true">Home</eui-linkbutton>
+  <eui-menubutton [menu]="edit" [plain]="true" iconCls="icon-edit">Edit</eui-menubutton>
+  <eui-menubutton [menu]="help" [plain]="true" iconCls="icon-help">Help</eui-menubutton>
+  <eui-menubutton [menu]="about" [plain]="true">About</eui-menubutton>
+</eui-panel>
+<eui-menu #edit>
+  <eui-menu-item text="Undo" iconCls="icon-undo"></eui-menu-item>
+  <eui-menu-item text="Redo" iconCls="icon-redo"></eui-menu-item>
+  <eui-menu-sep></eui-menu-sep>
+  <eui-menu-item text="Cut"></eui-menu-item>
+  <eui-menu-item text="Copy"></eui-menu-item>
+  <eui-menu-item text="Paste"></eui-menu-item>
+  <eui-menu-sep></eui-menu-sep>
+  <eui-menu-item text="Toolbar">
+    <eui-submenu>
+      <eui-menu-item text="Address"></eui-menu-item>
+      <eui-menu-item text="Link"></eui-menu-item>
+      <eui-menu-item text="Navigation Toolbar"></eui-menu-item>
+      <eui-menu-item text="Bookmark Toolbar"></eui-menu-item>
+      <eui-menu-sep></eui-menu-sep>
+      <eui-menu-item text="New Toolbar..."></eui-menu-item>
+    </eui-submenu>
+  </eui-menu-item>
+  <eui-menu-item text="Delete" iconCls="icon-remove"></eui-menu-item>
+  <eui-menu-item text="Select All"></eui-menu-item>
+</eui-menu>
+<eui-menu #help>
+  <eui-menu-item text="Help"></eui-menu-item>
+  <eui-menu-item text="Update"></eui-menu-item>
+  <eui-menu-item text="About"></eui-menu-item>
+</eui-menu>
+<eui-menu #about [noline]="true">
+  <div style="padding:10px">
+    <img src="https://www.jeasyui.com/images/logo1.png" style="width:150px;height:50px">
+  </div>
+</eui-menu>
