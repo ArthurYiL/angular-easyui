@@ -16,7 +16,12 @@ import { AddonComponent } from './number-box/addon/addon.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'number-box/addon', component: AddonComponent },
+  { path: 'number-box/basic', component: BasicComponent },
+  { path: 'number-box/format', component: FormatComponent },
+  { path: 'number-box/spin-align', component: SpinAlignComponent },
+  { path: 'number-box/spinner', component: SpinnerComponent }
 ];
 
 @NgModule({
