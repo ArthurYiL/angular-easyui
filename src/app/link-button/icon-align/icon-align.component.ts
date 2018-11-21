@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IconAlignComponent implements OnInit {
 
+  align: string = 'left';
+  alignOptions = [
+    { value: 'left', text: 'Left' },
+    { value: 'right', text: 'Right' },
+    { value: 'top', text: 'Top' },
+    { value: 'bottom', text: 'Bottom' }
+  ]
+
   constructor() { }
 
   ngOnInit() {

@@ -1,3 +1,15 @@
-<p>
-  group works!
-</p>
+<h2>Button Group</h2>
+<p>Single Selection</p>
+<eui-button-group selectionMode="single">
+  <eui-linkbutton iconCls="icon-add" [toggle]="true" [selected]="true">Add</eui-linkbutton>
+  <eui-linkbutton iconCls="icon-remove" [toggle]="true">Remove</eui-linkbutton>
+  <eui-linkbutton iconCls="icon-save" [toggle]="true">Save</eui-linkbutton>
+  <eui-linkbutton iconCls="icon-cut" [disabled]="true">Cut</eui-linkbutton>
+</eui-button-group>
+<p>Multiple Selection</p>
+<eui-button-group selectionMode="multiple">
+  <eui-linkbutton iconCls="icon-add" [toggle]="true">Add</eui-linkbutton>
+  <eui-linkbutton iconCls="icon-remove" [toggle]="true">Remove</eui-linkbutton>
+  <eui-linkbutton iconCls="icon-save" [toggle]="true">Save</eui-linkbutton>
+  <eui-linkbutton iconCls="icon-cut" [disabled]="true">Cut</eui-linkbutton>
+</eui-button-group>

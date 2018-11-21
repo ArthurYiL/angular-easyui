@@ -1,3 +1,8 @@
-<p>
-  icon-align works!
-</p>
+<h2>Icon Align</h2>
+<eui-combobox [data]="alignOptions" [editable]="false" [(ngModel)]="align"></eui-combobox>
+<div style="margin-top:20px">
+  <eui-linkbutton iconCls="icon-add" [iconAlign]="align">Add</eui-linkbutton>
+  <eui-linkbutton iconCls="icon-remove" [iconAlign]="align">Remove</eui-linkbutton>
+  <eui-linkbutton iconCls="icon-save" [iconAlign]="align">Save</eui-linkbutton>
+  <eui-linkbutton iconCls="icon-cut" [disabled]="true" [iconAlign]="align">Cut</eui-linkbutton>
+</div>
