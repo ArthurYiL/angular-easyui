@@ -8,6 +8,9 @@ import { EasyUIModule } from 'ng-easyui/components/easyui/easyui.module';
 
 import { AppComponent } from './app.component';
 import { OfficialComponent } from './official/official.component';
+import { BasicComponent } from './layout/basic/basic.component';
+import { SidePanelComponent } from './layout/side-panel/side-panel.component';
+import { SplitPanelComponent } from './layout/split-panel/split-panel.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
@@ -17,7 +20,10 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    OfficialComponent
+    OfficialComponent,
+    BasicComponent,
+    SidePanelComponent,
+    SplitPanelComponent
   ],
   imports: [
     FormsModule,
