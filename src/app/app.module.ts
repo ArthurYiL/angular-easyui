@@ -14,7 +14,10 @@ import { TemplateComponent } from './datebox/template/template.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'datebox/basic', component: BasicComponent },
+  { path: 'datebox/format', component: FormatComponent },
+  { path: 'datebox/template', component: TemplateComponent }
 ];
 
 @NgModule({

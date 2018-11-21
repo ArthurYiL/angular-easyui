@@ -1,3 +1,9 @@
-<p>
-  format works!
-</p>
+<h2>Date Format</h2>
+<div style="margin-bottom:20px">
+  <label [for]="d1" align="top">Default Format</label>
+  <eui-datebox #d1 [(ngModel)]="value"></eui-datebox>
+</div>
+<div style="margin-bottom:20px">
+  <label [for]="d2" align="top">yyyy-MM-dd</label>
+  <eui-datebox #d2 [(ngModel)]="value" format="yyyy-MM-dd"></eui-datebox>
+</div>
