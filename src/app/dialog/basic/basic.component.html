@@ -1,3 +1,5 @@
-<p>
-  basic works!
-</p>
+<h2>Basic Dialog</h2>
+<eui-linkbutton (click)="d1.open()">Open Dialog</eui-linkbutton>
+<eui-dialog #d1 [title]="'Basic Dialog'" [panelStyle]="{width:'400px',height:'200px'}" [modal]="true">
+  <p style="text-align:center;margin:50px 0;font-size:16px">The Dialog Content.</p>
+</eui-dialog>

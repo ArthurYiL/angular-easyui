@@ -1,3 +1,6 @@
-<p>
-  drggable-resizable works!
-</p>
+<h2>Draggable And Resizable</h2>
+<eui-linkbutton (click)="d1.open()">Open Dialog</eui-linkbutton>
+<eui-dialog #d1 [title]="'Draggable And Resizable'" [panelStyle]="{width:'400px',height:'200px'}" [modal]="true" [resizable]="true"
+  [draggable]="true">
+  <p style="text-align:center;margin:50px 0;font-size:16px">The Dialog Content.</p>
+</eui-dialog>

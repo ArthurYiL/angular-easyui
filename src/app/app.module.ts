@@ -16,7 +16,12 @@ import { DrggableResizableComponent } from './dialog/drggable-resizable/drggable
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'dialog/basic', component: BasicComponent },
+  { path: 'dialog/custom-style', component: CustomStyleComponent },
+  { path: 'dialog/draggable-resizable', component: DrggableResizableComponent },
+  { path: 'dialog/no-border', component: NoBorderComponent },
+  { path: 'dialog/toolbar-button', component: ToolbarButtonComponent }
 ];
 
 @NgModule({

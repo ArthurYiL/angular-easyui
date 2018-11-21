@@ -1,3 +1,12 @@
-<p>
-  custom-style works!
-</p>
+<h2>Custom Dialog Style</h2>
+<eui-linkbutton (click)="d1.open()">Open Dialog</eui-linkbutton>
+<eui-dialog #d1 panelCls="mydlg" headerCls="mydlg-header" footerCls="mydlg-footer" [modal]="true" borderType="none">
+  <eui-panel-header>Please Confirm</eui-panel-header>
+  <p style="text-align:center;margin:50px 0;font-size:16px">Are you sure you want to continue?</p>
+  <eui-panel-footer>
+    <eui-button-group style="width:100%;height:50px">
+      <eui-linkbutton class="f-full" [plain]="true" btnCls="mybtn">Ok</eui-linkbutton>
+      <eui-linkbutton class="f-full" [plain]="true" btnCls="mybtn">Cancel</eui-linkbutton>
+    </eui-button-group>
+  </eui-panel-footer>
+</eui-dialog>
