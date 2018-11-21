@@ -15,7 +15,11 @@ import { TemplateComponent } from './menu/template/template.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'menu/basic', component: BasicComponent },
+  { path: 'menu/context', component: ContextComponent },
+  { path: 'menu/style', component: StyleComponent },
+  { path: 'menu/template', component: TemplateComponent }
 ];
 
 @NgModule({
