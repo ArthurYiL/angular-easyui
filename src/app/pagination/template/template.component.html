@@ -1,3 +1,15 @@
-<p>
-  template works!
-</p>
+<h2>Pagination Template</h2>
+<eui-panel [bodyStyle]="{padding:'20px'}">
+  <p>Total: {{total}}</p>
+  <p>Page Number: {{pageNumber}}</p>
+  <p>Page Size: {{pageSize}}</p>
+  <eui-panel-footer>
+    <eui-pagination [total]="total" [pageSize]="pageSize" [pageNumber]="pageNumber" [layout]="layout" (pageChange)="onPageChange($event)">
+      <ng-template euiPageTemplate let-pager>
+        <eui-linkbutton plain="true" iconCls="icon-add"></eui-linkbutton>
+        <eui-linkbutton plain="true" iconCls="icon-remove"></eui-linkbutton>
+        <eui-numberbox class="page-num" [(ngModel)]="pageNumber" [min]="1" [max]="pager.pageCount"></eui-numberbox>
+      </ng-template>
+    </eui-pagination>
+  </eui-panel-footer>
+</eui-panel>
