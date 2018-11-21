@@ -13,7 +13,9 @@ import { FormatComponent } from './dateTimeSnipper/format/format.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'date-time-snipper/basic', component: BasicComponent },
+  { path: 'date-time-snipper/format', component: FormatComponent }
 ];
 
 @NgModule({

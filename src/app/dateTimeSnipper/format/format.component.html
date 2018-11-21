@@ -1,3 +1,13 @@
-<p>
-  format works!
-</p>
+<h2>DateTime Format</h2>
+<div style="margin-bottom:20px">
+  <label [for]="t1" align="top">MM/dd/yyyy HH:mm:ss</label>
+  <eui-datetimespinner #t1 value="06/24/2017 18:20:30" format="MM/dd/yyyy HH:mm:ss"></eui-datetimespinner>
+</div>
+<div style="margin-bottom:20px">
+  <label [for]="t2" align="top">MM/dd/yyyy</label>
+  <eui-datetimespinner #t2 value="06/24/2017" format="MM/dd/yyyy"></eui-datetimespinner>
+</div>
+<div style="margin-bottom:20px">
+  <label [for]="t3" align="top">yyyy-MM</label>
+  <eui-datetimespinner #t3 value="2017-09" format="yyyy-MM"></eui-datetimespinner>
+</div>
