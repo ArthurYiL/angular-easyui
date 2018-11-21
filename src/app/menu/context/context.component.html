@@ -1,3 +1,17 @@
-<p>
-  context works!
-</p>
+<h2>Context Menu</h2>
+<div [euiContextMenu]="m1" class="f-row f-content-center" style="width:400px;height:200px;border:1px solid #ddd">
+  <p>Right click here to open the Menu.</p>
+</div>
+<eui-menu #m1>
+  <eui-menu-item text="New"></eui-menu-item>
+  <eui-menu-item text="Open">
+    <eui-submenu>
+      <eui-menu-item text="Word"></eui-menu-item>
+      <eui-menu-item text="Excel"></eui-menu-item>
+      <eui-menu-item text="PowerPoint"></eui-menu-item>
+    </eui-submenu>
+  </eui-menu-item>
+  <eui-menu-item text="Save" iconCls="icon-save"></eui-menu-item>
+  <eui-menu-item text="Print" iconCls="icon-print" [disabled]="true"></eui-menu-item>
+  <eui-menu-item text="Exit"></eui-menu-item>
+</eui-menu>

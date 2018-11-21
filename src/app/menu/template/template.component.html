@@ -1,3 +1,11 @@
-<p>
-  template works!
-</p>
+<h2>MenuItem Template</h2>
+<eui-menu [inline]="true" [noline]="true" menuWidth="200">
+  <eui-menu-item *ngFor="let item of items">
+    <ng-template euiItemTemplate>
+      <div class="item">{{item.text}}</div>
+      <div *ngIf="item.count" class="right">
+        <span class="count">{{item.count}}</span>
+      </div>
+    </ng-template>
+  </eui-menu-item>
+</eui-menu>

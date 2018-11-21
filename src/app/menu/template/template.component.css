@@ -1,0 +1,22 @@
+.item {
+    line-height: 30px;
+    padding: 0 20px;
+}
+
+.right {
+    position: absolute;
+    right: 20px;
+    height: 30px;
+    top: 5px;
+}
+
+.count {
+    display: inline-block;
+    border-radius: 6px;
+    background: #666;
+    color: #fff;
+    padding: 0 6px;
+    font-size: 12px;
+    line-height: 16px;
+    height: 16px;
+}

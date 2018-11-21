@@ -1,3 +1,16 @@
-<p>
-  basic works!
-</p>
+<h2>Basic Menu</h2>
+<eui-menu [inline]="true" (itemClick)="onItemClick($event)">
+  <eui-menu-item value="new" text="New"></eui-menu-item>
+  <eui-menu-item text="Open">
+    <eui-submenu>
+      <eui-menu-item value="word" text="Word"></eui-menu-item>
+      <eui-menu-item value="excel" text="Excel"></eui-menu-item>
+      <eui-menu-item value="ppt" text="PowerPoint"></eui-menu-item>
+    </eui-submenu>
+  </eui-menu-item>
+  <eui-menu-item value="save" text="Save" iconCls="icon-save"></eui-menu-item>
+  <eui-menu-item value="print" text="Print" iconCls="icon-print" [disabled]="true"></eui-menu-item>
+  <eui-menu-sep></eui-menu-sep>
+  <eui-menu-item value="exit" text="Exit"></eui-menu-item>
+</eui-menu>
+<p *ngIf="value">Item Clicked: {{value}}</p>

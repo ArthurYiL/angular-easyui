@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BasicComponent implements OnInit {
 
+  value = null;
+
+  onItemClick(event) {
+    this.value = event;
+  }
+
   constructor() { }
 
   ngOnInit() {

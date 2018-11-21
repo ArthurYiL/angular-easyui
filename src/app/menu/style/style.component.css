@@ -1,0 +1,8 @@
+.mymenu {
+    padding: 2px 0;
+}
+
+.mymenu .menu-active {
+    border-radius: 0;
+    border-color: transparent;
+}
