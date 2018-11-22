@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategoryComponent implements OnInit {
 
+  value;
+
+  onSearch(event) {
+    this.value = event;
+  }
+
   constructor() { }
 
   ngOnInit() {

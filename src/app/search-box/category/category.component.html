@@ -1,3 +1,11 @@
-<p>
-  category works!
-</p>
+<h2>Search Category</h2>
+<eui-searchbox #sb style="width:300px" placeholder="Input something here" [menu]="m1" (search)="onSearch($event)">
+  <eui-addon>
+    <span *ngIf="sb.value!=null" class="textbox-icon icon-clear" title="Clear value" (click)="sb.value=null"></span>
+  </eui-addon>
+</eui-searchbox>
+<eui-menu #m1>
+  <eui-menu-item value="all" text="All News" iconCls="icon-ok"></eui-menu-item>
+  <eui-menu-item value="sports" text="Sports News" iconCls="icon-man"></eui-menu-item>
+</eui-menu>
+<p>You are searching: {{value | json}}</p>

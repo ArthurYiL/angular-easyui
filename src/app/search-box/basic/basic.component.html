@@ -1,3 +1,7 @@
-<p>
-  basic works!
-</p>
+<h2>Basic SearchBox</h2>
+<eui-searchbox #sb style="width:300px" placeholder="Input something here" (search)="onSearch($event)">
+  <eui-addon>
+    <span *ngIf="sb.value!=null" class="textbox-icon icon-clear" title="Clear value" (click)="sb.value=null"></span>
+  </eui-addon>
+</eui-searchbox>
+<p>You are searching: {{value}}</p>

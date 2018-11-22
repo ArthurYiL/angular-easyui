@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BasicComponent implements OnInit {
 
+  value: string;
+
+  onSearch(event) {
+    this.value = event.value;
+  }
+
   constructor() { }
 
   ngOnInit() {
