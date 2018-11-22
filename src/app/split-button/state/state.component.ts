@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StateComponent implements OnInit {
 
+  enabled = true;
+  get disabled() {
+    return !this.enabled;
+  }
+
   constructor() { }
 
   ngOnInit() {
