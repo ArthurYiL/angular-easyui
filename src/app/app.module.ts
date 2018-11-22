@@ -13,7 +13,9 @@ import { StyleComponent } from './side-menu/style/style.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'side-menu/basic', component: BasicComponent },
+  { path: 'side-menu/style', component: StyleComponent }
 ];
 
 @NgModule({
