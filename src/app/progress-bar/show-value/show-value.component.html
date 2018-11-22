@@ -1,3 +1,11 @@
-<p>
-  show-value works!
-</p>
+<h2>Custom Value</h2>
+<div style="margin-bottom:20px">
+  <eui-progressbar value="40" [showValue]="true"></eui-progressbar>
+</div>
+<div style="margin-bottom:20px">
+  <eui-progressbar value="70" [showValue]="false">Processing 70%</eui-progressbar>
+</div>
+<div style="margin-bottom:20px">
+  <div style="text-align:right">50%</div>
+  <eui-progressbar value="50" [showValue]="false" barCls="c6" style="height:4px"></eui-progressbar>
+</div>

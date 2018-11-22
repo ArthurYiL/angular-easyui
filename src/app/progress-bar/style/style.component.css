@@ -1,0 +1,12 @@
+.mybar {
+    height: 1px;
+    background: #ddd;
+}
+
+.mybar .progressbar {
+    border: 0
+}
+
+.mybar .progressbar-value {
+    background: red;
+}
