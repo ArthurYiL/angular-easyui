@@ -14,7 +14,10 @@ import { StyleComponent } from './tag-box/style/style.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'tag-box/autocomplete', component: AutocompleteComponent },
+  { path: 'tag-box/basic', component: BasicComponent },
+  { path: 'tag-box/style', component: StyleComponent }
 ];
 
 @NgModule({
