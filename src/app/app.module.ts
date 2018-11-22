@@ -14,7 +14,10 @@ import { StyleComponent } from './time-spinner/style/style.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'time-spinner/basic', component: BasicComponent },
+  { path: 'time-spinner/range', component: RangeComponent },
+  { path: 'time-spinner/style', component: StyleComponent }
 ];
 
 @NgModule({
