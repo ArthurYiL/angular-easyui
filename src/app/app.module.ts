@@ -13,7 +13,9 @@ import { HeaderFooterComponent } from './panel/header-footer/header-footer.compo
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'panel/basic', component: BasicComponent },
+  { path: 'panel/header-footer', component: HeaderFooterComponent }
 ];
 
 @NgModule({
