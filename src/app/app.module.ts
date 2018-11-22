@@ -18,6 +18,12 @@ import { DynamicContentComponent } from './tabs/dynamic-content/dynamic-content.
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
   { path: 'official', component: OfficialComponent }
+  { path: 'tabs/basic', component: BasicComponent }
+  { path: 'tabs/dynamic-content', component: DynamicContentComponent }
+  { path: 'tabs/position', component: PositionComponent }
+  { path: 'tabs/scrollable', component: ScrollableComponent }
+  { path: 'tabs/style', component: StyleComponent }
+  { path: 'tabs/template', component: TemplateComponent }
 ];
 
 @NgModule({
