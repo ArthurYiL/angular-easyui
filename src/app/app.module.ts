@@ -15,7 +15,11 @@ import { VerticalComponent } from './slider/vertical/vertical.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'slider/basic', component: BasicComponent },
+  { path: 'slider/range', component: RangeComponent },
+  { path: 'slider/rule', component: RuleComponent },
+  { path: 'slider/vertical', component: VerticalComponent }
 ];
 
 @NgModule({
