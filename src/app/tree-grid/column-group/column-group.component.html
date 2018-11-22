@@ -1,3 +1,20 @@
-<p>
-  column-group works!
-</p>
+<h2>Column Group</h2>
+<eui-treegrid style="height:250px" [data]="data" idField="id" treeField="region">
+  <eui-grid-column-group>
+    <eui-grid-header-row>
+      <eui-grid-column field="region" title="Region" rowspan="2" width="25%"></eui-grid-column>
+      <eui-grid-column title="2017" colspan="4"></eui-grid-column>
+      <eui-grid-column title="2018" colspan="4"></eui-grid-column>
+    </eui-grid-header-row>
+    <eui-grid-header-row>
+      <eui-grid-column field="f1" title="1st qrt." align="right"></eui-grid-column>
+      <eui-grid-column field="f2" title="2st qrt." align="right"></eui-grid-column>
+      <eui-grid-column field="f3" title="3st qrt." align="right"></eui-grid-column>
+      <eui-grid-column field="f4" title="4st qrt." align="right"></eui-grid-column>
+      <eui-grid-column field="f5" title="1st qrt." align="right"></eui-grid-column>
+      <eui-grid-column field="f6" title="2st qrt." align="right"></eui-grid-column>
+      <eui-grid-column field="f7" title="3st qrt." align="right"></eui-grid-column>
+      <eui-grid-column field="f8" title="4st qrt." align="right"></eui-grid-column>
+    </eui-grid-header-row>
+  </eui-grid-column-group>
+</eui-treegrid>

@@ -1,0 +1,12 @@
+.progress {
+    width: 100%;
+    height: 20px;
+    border: 1px solid #ccc;
+}
+
+.progress-inner {
+    height: 100%;
+    background: red;
+    color: #fff;
+    padding: 0 4px;
+}

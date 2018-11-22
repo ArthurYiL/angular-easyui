@@ -1,3 +1,21 @@
-<p>
-  template works!
-</p>
+<h2>TreeGrid Template</h2>
+<eui-treegrid style="height:250px" [data]="data" [footerData]="footerData" [showFooter]="true" idField="id" treeField="name">
+  <eui-grid-column field="name" title="Name" width="30%">
+    <ng-template euiFooterTemplate let-row>
+      <span class="tree-file icon-sum"></span>
+      {{row.name}}
+    </ng-template>
+  </eui-grid-column>
+  <eui-grid-column field="persons" title="Persons" align="right"></eui-grid-column>
+  <eui-grid-column field="begin" title="Begin Date"></eui-grid-column>
+  <eui-grid-column field="end" title="End Date"></eui-grid-column>
+  <eui-grid-column field="progress" title="Progress">
+    <ng-template euiCellTemplate let-row>
+      <div class="progress">
+        <div class="progress-inner" [style.width.%]="row.progress">
+          {{row.progress}} %
+        </div>
+      </div>
+    </ng-template>
+  </eui-grid-column>
+</eui-treegrid>
