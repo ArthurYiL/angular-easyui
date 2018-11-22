@@ -8,6 +8,12 @@ import { EasyUIModule } from 'ng-easyui/components/easyui/easyui.module';
 
 import { AppComponent } from './app.component';
 import { OfficialComponent } from './official/official.component';
+import { BasicComponent } from './tabs/basic/basic.component';
+import { PositionComponent } from './tabs/position/position.component';
+import { StyleComponent } from './tabs/style/style.component';
+import { TemplateComponent } from './tabs/template/template.component';
+import { ScrollableComponent } from './tabs/scrollable/scrollable.component';
+import { DynamicContentComponent } from './tabs/dynamic-content/dynamic-content.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
@@ -17,7 +23,13 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    OfficialComponent
+    OfficialComponent,
+    BasicComponent,
+    PositionComponent,
+    StyleComponent,
+    TemplateComponent,
+    ScrollableComponent,
+    DynamicContentComponent
   ],
   imports: [
     FormsModule,
