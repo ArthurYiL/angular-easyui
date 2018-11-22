@@ -12,7 +12,8 @@ import { BasicComponent } from './password-box/basic/basic.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'password-box/basic', component: BasicComponent }
 ];
 
 @NgModule({
