@@ -13,7 +13,9 @@ import { LazyLoadComponent } from './virtual-ccroll/lazy-load/lazy-load.componen
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'virtual-scroll/basic', component: BasicComponent },
+  { path: 'virtual-scroll/lazy-load', component: LazyLoadComponent }
 ];
 
 @NgModule({
