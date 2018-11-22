@@ -17,7 +17,13 @@ import { FilteringComponent } from './tree/filtering/filtering.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'tree/basic', component: BasicComponent },
+  { path: 'tree/check-box', component: CheckBoxComponent },
+  { path: 'tree/filtering', component: FilteringComponent },
+  { path: 'tree/lazy-load', component: LazyLoadComponent },
+  { path: 'tree/node-icon', component: NodeIconComponent },
+  { path: 'tree/template', component: TemplateComponent }
 ];
 
 @NgModule({
