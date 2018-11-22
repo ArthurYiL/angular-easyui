@@ -17,7 +17,13 @@ import { TemplateComponent } from './tree-grid/template/template.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'tree-grid/basic', component: BasicComponent },
+  { path: 'tree-grid/check-box', component: CheckBoxComponent },
+  { path: 'tree-grid/column-group', component: ColumnGroupComponent },
+  { path: 'tree-grid/footer-rows', component: FooterRowsComponent },
+  { path: 'tree-grid/frozen-column', component: FrozenColumnComponent },
+  { path: 'tree-grid/template', component: TemplateComponent }
 ];
 
 @NgModule({
