@@ -8,6 +8,9 @@ import { EasyUIModule } from 'ng-easyui/components/easyui/easyui.module';
 
 import { AppComponent } from './app.component';
 import { OfficialComponent } from './official/official.component';
+import { BasicComponent } from './progress-bar/basic/basic.component';
+import { ShowValueComponent } from './progress-bar/show-value/show-value.component';
+import { StyleComponent } from './progress-bar/style/style.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
@@ -17,7 +20,10 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    OfficialComponent
+    OfficialComponent,
+    BasicComponent,
+    ShowValueComponent,
+    StyleComponent
   ],
   imports: [
     FormsModule,
