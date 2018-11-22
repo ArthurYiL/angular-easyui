@@ -1,3 +1,16 @@
-<p>
-  header-footer works!
-</p>
+<h2>Header and Footer</h2>
+<eui-panel [bodyStyle]="{padding:'20px'}" style="height:200px">
+  <eui-panel-header>
+    <div class="f-row">
+      <div class="f-full" style="line-height:30px">Panel Title</div>
+      <eui-textbox iconCls="icon-search"></eui-textbox>
+    </div>
+  </eui-panel-header>
+  <p>Panel Content.</p>
+  <eui-panel-footer>
+    <div style="padding:5px">
+      <eui-linkbutton iconCls="icon-add">New</eui-linkbutton>
+      <eui-linkbutton iconCls="icon-remove">Remove</eui-linkbutton>
+    </div>
+  </eui-panel-footer>
+</eui-panel>
