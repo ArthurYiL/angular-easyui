@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RangeComponent implements OnInit {
 
+  value = [20, 60];
+
   constructor() { }
 
   ngOnInit() {

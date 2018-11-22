@@ -1,3 +1,5 @@
-<p>
-  range works!
-</p>
+<h2>Slider Range</h2>
+<div style="padding:20px">
+  <eui-slider style="width:300px;" [(ngModel)]="value" [showTip]="true" [range]="true" [rule]="[0,'|',25,'|',50,'|',75,'|',100]"></eui-slider>
+  <div style="margin-top:50px">Value: {{value}}</div>
+</div>
