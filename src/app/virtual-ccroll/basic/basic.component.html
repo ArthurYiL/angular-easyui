@@ -1,3 +1,13 @@
-<p>
-  basic works!
-</p>
+<h2>Virtual Scroll</h2>
+<eui-panel>
+  <eui-virtual-scroll [style.height.px]="height" [data]="data" [total]="total" [pageNumber]="pageNumber" [pageSize]="pageSize"
+    [rowHeight]="rowHeight" (update)="items=$event">
+    <div *ngFor="let item of items" class="item f-row">
+      <div class="num">{{item.id}}</div>
+      <div>
+        <div class="name">{{item.name}}</div>
+        <div class="desp">{{item.desp}}</div>
+      </div>
+    </div>
+  </eui-virtual-scroll>
+</eui-panel>

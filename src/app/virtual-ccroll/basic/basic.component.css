@@ -1,0 +1,26 @@
+.item {
+    height: 60px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.item .num {
+    width: 40px;
+    height: 40px;
+    background: #b8eecf;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 10px;
+}
+
+.item .name {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 22px;
+}
+
+.item .desp {
+    color: #666;
+    line-height: 18px;
+}
