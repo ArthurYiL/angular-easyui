@@ -1,3 +1,12 @@
-<p>
-  multiline works!
-</p>
+<h2>Multiline TextBox</h2>
+<p>This example shows how to define a textbox for the user to enter multi-line text input.</p>
+<div style="width:100%;max-width:400px;">
+  <div style="margin-bottom:10px">
+    <label [for]="t1" align="top">Name:</label>
+    <eui-textbox #t1 iconCls="icon-man" style="width:100%"></eui-textbox>
+  </div>
+  <div style="margin-bottom:10px">
+    <label [for]="t2" align="top">Description:</label>
+    <eui-textbox #t2 [multiline]="true" [value]="description" style="width:100%;height:120px"></eui-textbox>
+  </div>
+</div>

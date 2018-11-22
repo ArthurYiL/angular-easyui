@@ -1,3 +1,21 @@
-<p>
-  basic works!
-</p>
+<h2>Basic TextBox</h2>
+<p>The TextBox allows users to enter a string through the inputing box.</p>
+<div style="margin-bottom:10px;display:inline-block;margin-right:1em">
+  <label [for]="t1" align="top">First Name:</label>
+  <eui-textbox #t1 [(ngModel)]="fname" iconCls="icon-man" placeholder="First name"></eui-textbox>
+</div>
+<div style="margin-bottom:10px;display:inline-block">
+  <label [for]="t2" align="top">Last Name:</label>
+  <eui-textbox #t2 [(ngModel)]="lname" placeholder="Last name"></eui-textbox>
+</div>
+<div style="margin-bottom:10px">
+  <label [for]="t3" align="top">Address:</label>
+  <eui-textbox #t3 [(ngModel)]="addr" style="width:25em"></eui-textbox>
+</div>
+<div style="margin-bottom:10px">
+  <label [for]="t4" align="top">Company:</label>
+  <eui-textbox #t4 [disabled]="true" placeholder="Company" style="width:25em"></eui-textbox>
+</div>
+<p *ngIf="fname">First Name: {{fname}}</p>
+<p *ngIf="lname">Last Name: {{lname}}</p>
+<p *ngIf="addr">Address: {{addr}}</p>

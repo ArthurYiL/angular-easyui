@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BasicComponent implements OnInit {
 
+  fname: string;
+  lname: string;
+  addr: string;
+
   constructor() { }
 
   ngOnInit() {
