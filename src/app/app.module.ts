@@ -13,7 +13,9 @@ import { StateComponent } from './split-button/state/state.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'split-button/basic', component: BasicComponent },
+  { path: 'split-button/state', component: StateComponent }
 ];
 
 @NgModule({
