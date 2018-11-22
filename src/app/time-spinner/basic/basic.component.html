@@ -1,3 +1,10 @@
-<p>
-  basic works!
-</p>
+<h2>Basic TimeSpinner</h2>
+<div style="margin-bottom:20px">
+  <label [for]="t1">Start Time:</label>
+  <eui-timespinner #t1 [(ngModel)]="time1"></eui-timespinner>
+</div>
+<div style="margin-bottom:20px">
+  <label [for]="t2">End Time:</label>
+  <eui-timespinner #t2 [(ngModel)]="time2"></eui-timespinner>
+</div>
+<p>Start: {{time1}}, End: {{time2}}</p>

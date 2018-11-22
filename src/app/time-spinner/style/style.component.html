@@ -1,3 +1,9 @@
-<p>
-  style works!
-</p>
+<h2>TimeSpinner Style</h2>
+<div style="margin-bottom:20px">
+  <label [for]="t1" align="top">Horizontal:</label>
+  <eui-timespinner #t1 [(ngModel)]="time" spinAlign="horizontal" [inputStyle]="inputStyle"></eui-timespinner>
+</div>
+<div style="margin-bottom:20px">
+  <label [for]="t2" align="top">Vertical:</label>
+  <eui-timespinner #t2 [(ngModel)]="time" spinAlign="vertical" [inputStyle]="inputStyle" style="width:60px;height:90px"></eui-timespinner>
+</div>

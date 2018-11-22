@@ -1,3 +1,5 @@
-<p>
-  range works!
-</p>
+<h2>Time Range</h2>
+<p>The time value is constrained in specified range(08:30 - 18:10).</p>
+<eui-timespinner placeholder="Select a time" [(ngModel)]="time" min="08:30" max="18:10">
+</eui-timespinner>
+<p *ngIf="time">Selected: {{time}}</p>

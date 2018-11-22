@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StyleComponent implements OnInit {
 
+  time = '08:30';
+  inputStyle = {
+    textAlign: 'center',
+    fontSize: '16px'
+  };
+
   constructor() { }
 
   ngOnInit() {
