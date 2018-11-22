@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BasicComponent implements OnInit {
 
+  username = null;
+  password = null;
+
+  onValueChange(event) {
+    console.log(event)
+  }
+
   constructor() { }
 
   ngOnInit() {
