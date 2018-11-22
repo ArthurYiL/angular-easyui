@@ -1,3 +1,4 @@
-<p>
-  style works!
-</p>
+<h2>TagBox Style</h2>
+<eui-tagbox [(ngModel)]="value" style="width:300px;" valueField="id" textField="text" placeholder="Select a Language" [limitToList]="true"
+  [hasDownArrow]="true" [(ngModel)]="value" [data]="data" [tagCss]="tagCss"></eui-tagbox>
+<p *ngIf="value">{{value | json}}</p>

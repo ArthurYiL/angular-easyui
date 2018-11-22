@@ -7,6 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AutocompleteComponent implements OnInit {
 
+  value = ["3"];
+
+  data = [{
+    "id": "1",
+    "text": "Java"
+  }, {
+    "id": "2",
+    "text": "C#"
+  }, {
+    "id": "3",
+    "text": "Ruby"
+  }, {
+    "id": "4",
+    "text": "Perl"
+  }, {
+    "id": "5",
+    "text": "Basic"
+  }];
+
   constructor() { }
 
   ngOnInit() {
