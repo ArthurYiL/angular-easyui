@@ -13,7 +13,9 @@ import { CategoryComponent } from './search-box/category/category.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'search-box/basic', component: BasicComponent },
+  { path: 'search-box/category', component: CategoryComponent }
 ];
 
 @NgModule({
