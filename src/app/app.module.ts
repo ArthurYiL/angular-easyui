@@ -8,6 +8,10 @@ import { EasyUIModule } from 'ng-easyui/components/easyui/easyui.module';
 
 import { AppComponent } from './app.component';
 import { OfficialComponent } from './official/official.component';
+import { BasicComponent } from './slider/basic/basic.component';
+import { RangeComponent } from './slider/range/range.component';
+import { RuleComponent } from './slider/rule/rule.component';
+import { VerticalComponent } from './slider/vertical/vertical.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
@@ -17,7 +21,11 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    OfficialComponent
+    OfficialComponent,
+    BasicComponent,
+    RangeComponent,
+    RuleComponent,
+    VerticalComponent
   ],
   imports: [
     FormsModule,
