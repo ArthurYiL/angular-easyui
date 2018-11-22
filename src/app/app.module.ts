@@ -14,7 +14,10 @@ import { MultilineComponent } from './text-box/multiline/multiline.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'text-box/addon', component: AddonComponent },
+  { path: 'text-box/basic', component: BasicComponent },
+  { path: 'text-box/multiline', component: MultilineComponent }
 ];
 
 @NgModule({
