@@ -8,6 +8,9 @@ import { EasyUIModule } from 'ng-easyui/components/easyui/easyui.module';
 
 import { AppComponent } from './app.component';
 import { OfficialComponent } from './official/official.component';
+import { BasicComponent } from './tag-box/basic/basic.component';
+import { AutocompleteComponent } from './tag-box/autocomplete/autocomplete.component';
+import { StyleComponent } from './tag-box/style/style.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
@@ -17,7 +20,10 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    OfficialComponent
+    OfficialComponent,
+    BasicComponent,
+    AutocompleteComponent,
+    StyleComponent
   ],
   imports: [
     FormsModule,
