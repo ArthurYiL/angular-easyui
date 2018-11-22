@@ -1,3 +1,14 @@
-<p>
-  basic works!
-</p>
+<h2>Basic SwitchButton</h2>
+<div class="fitem">
+  <label [for]="s1">Receive mail:</label>
+  <eui-switchbutton #s1 [(ngModel)]="received"></eui-switchbutton>
+</div>
+<div class="fitem">
+  <label [for]="s2">Shared network:</label>
+  <eui-switchbutton #s2 [(ngModel)]="shared"></eui-switchbutton>
+</div>
+<div class="fitem">
+  <label [for]="s3">Subscribed:</label>
+  <eui-switchbutton #s3 [(ngModel)]="subscribed"></eui-switchbutton>
+</div>
+<p>Received: {{received}}, Shared: {{shared}}, Subscribed: {{subscribed}}</p>

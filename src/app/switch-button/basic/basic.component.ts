@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BasicComponent implements OnInit {
 
+  received: boolean = true;
+  shared: boolean = true;
+  subscribed: boolean = false;
+
   constructor() { }
 
   ngOnInit() {

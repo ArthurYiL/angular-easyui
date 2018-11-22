@@ -1,3 +1,13 @@
-<p>
-  state works!
-</p>
+<h2>SwitchButton State</h2>
+<div class="fitem">
+  <label [for]="s1">Normal:</label>
+  <eui-switchbutton #s1></eui-switchbutton>
+</div>
+<div class="fitem">
+  <label [for]="s2">Disabled:</label>
+  <eui-switchbutton #s2 [disabled]="true"></eui-switchbutton>
+</div>
+<div class="fitem">
+  <label [for]="s3">Readonly:</label>
+  <eui-switchbutton #s3 [readonly]="true" [value]="true"></eui-switchbutton>
+</div>
