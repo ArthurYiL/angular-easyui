@@ -1,3 +1,6 @@
-<p>
-  basic works!
-</p>
+<h2>Basic RadioButton</h2>
+<div *ngFor="let fruit of fruits" style="margin-bottom:10px">
+  <eui-radiobutton name="group1" [inputId]="fruit" [value]="fruit" [(ngModel)]="value"></eui-radiobutton>
+  <label [attr.for]="fruit">{{fruit}}</label>
+</div>
+<p *ngIf="value">You selected: {{value}}</p>
