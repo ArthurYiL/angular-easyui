@@ -1,3 +1,8 @@
-<p>
-  filtering works!
-</p>
+<h2>Tree Filtering</h2>
+<eui-panel style="width:100%;max-width:600px;min-height:250px">
+  <eui-panel-header>
+    <eui-textbox style="width:100%" iconCls="icon-search" placeholder="Searching..." (valueChange)="tree.doFilter($event.currentValue)">
+    </eui-textbox>
+  </eui-panel-header>
+  <eui-tree #tree [data]="data"></eui-tree>
+</eui-panel>

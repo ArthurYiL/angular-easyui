@@ -1,3 +1,3 @@
-<p>
-  node-icon works!
-</p>
+<h2>Node Icon</h2>
+<eui-tree [data]="data" [(selection)]="selection"></eui-tree>
+<p *ngIf="selection">Selected: {{selection.text}}</p>

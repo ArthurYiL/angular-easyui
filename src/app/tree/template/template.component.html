@@ -1,3 +1,9 @@
-<p>
-  template works!
-</p>
+<h2>Template</h2>
+<eui-tree [data]="data" [(selection)]="selection">
+  <ng-template euiItemTemplate let-node>
+    <span>{{node.id}} - {{node.text}}</span>
+    <span *ngIf="node.id==11" class="tree-folder icon-man"></span>
+    <span *ngIf="node.id==12" class="tree-folder icon-tip"></span>
+  </ng-template>
+</eui-tree>
+<p *ngIf="selection">Selected: {{selection.text}}</p>

@@ -1,3 +1,7 @@
-<p>
-  check-box works!
-</p>
+<h2>Checkbox Tree</h2>
+<eui-tree [data]="data" [checkbox]="true" (checkChange)="checkedNodes = $event">
+</eui-tree>
+<div style="padding: 4px 16px">
+  <div>Checked Nodes:</div>
+  <div *ngFor="let node of checkedNodes;let index=index">{{index+1}} - {{node.text}}</div>
+</div>
