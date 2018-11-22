@@ -14,7 +14,10 @@ import { StyleComponent } from './switch-button/style/style.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'switch-button/basic', component: BasicComponent },
+  { path: 'switch-button/state', component: StateComponent },
+  { path: 'switch-button/style', component: StyleComponent }
 ];
 
 @NgModule({
