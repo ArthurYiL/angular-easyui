@@ -14,7 +14,10 @@ import { StyleComponent } from './progress-bar/style/style.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'progress-bar/basic', component: BasicComponent },
+  { path: 'progress-bar/show-value', component: ShowValueComponent },
+  { path: 'progress-bar/style', component: StyleComponent }
 ];
 
 @NgModule({
