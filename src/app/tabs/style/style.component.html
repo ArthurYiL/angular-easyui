@@ -1,3 +1,27 @@
-<p>
-  style works!
-</p>
+<h2>Tab Style</h2>
+<div class="fitem">
+  <label [for]="s1">plain:</label>
+  <eui-switchbutton #s1 [(ngModel)]="plain"></eui-switchbutton>
+</div>
+<div class="fitem">
+  <label [for]="s2">narrow:</label>
+  <eui-switchbutton #s2 [(ngModel)]="narrow"></eui-switchbutton>
+</div>
+<div class="fitem">
+  <label [for]="s3">justified:</label>
+  <eui-switchbutton #s3 [(ngModel)]="justified"></eui-switchbutton>
+</div>
+<eui-tabs [plain]="plain" [narrow]="narrow" [justified]="justified" style="height:150px">
+  <eui-tab-panel [title]="'Tab1'">
+    <p>Tab Panel1</p>
+  </eui-tab-panel>
+  <eui-tab-panel [title]="'Tab2'">
+    <p>Tab Panel2</p>
+  </eui-tab-panel>
+  <eui-tab-panel [title]="'Tab3'">
+    <p>Tab Panel3</p>
+  </eui-tab-panel>
+  <eui-tab-panel [title]="'Help'" [closable]="true" iconCls="icon-help">
+    <p>This is the help content.</p>
+  </eui-tab-panel>
+</eui-tabs>

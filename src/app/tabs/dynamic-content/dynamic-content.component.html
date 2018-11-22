@@ -1,3 +1,11 @@
-<p>
-  dynamic-content works!
-</p>
+<h2>Dynamic Tab Content</h2>
+<eui-linkbutton (click)="addDataGrid(tt)">AddDataGrid</eui-linkbutton>
+<eui-linkbutton (click)="addNewTab()">AddNewTab</eui-linkbutton>
+<eui-tabs #tt style="height:250px" [selectedIndex]="selectedIndex" (tabClose)="onTabClose($event)" (tabSelect)="selectedIndex=tt.getPanelIndex($event)">
+  <eui-tab-panel [title]="'Home'" iconCls="icon-ok">
+    <p>The home tab.</p>
+  </eui-tab-panel>
+  <eui-tab-panel *ngFor="let tab of tabs" [title]="tab.title" [closable]="true" bodyCls="f-column">
+    <tab-detail [component]="tab.component" class="f-full f-column"></tab-detail>
+  </eui-tab-panel>
+</eui-tabs>

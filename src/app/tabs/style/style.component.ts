@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StyleComponent implements OnInit {
 
+  plain: boolean = false;
+  narrow: boolean = false;
+  justified: boolean = false;
+
   constructor() { }
 
   ngOnInit() {

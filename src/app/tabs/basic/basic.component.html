@@ -1,3 +1,15 @@
-<p>
-  basic works!
-</p>
+<h2>Basic Tabs</h2>
+<eui-tabs style="height:250px">
+  <eui-tab-panel [title]="'Tab1'">
+    <p>Tab Panel1</p>
+  </eui-tab-panel>
+  <eui-tab-panel [title]="'Tab2'">
+    <p>Tab Panel2</p>
+  </eui-tab-panel>
+  <eui-tab-panel [title]="'Tab3'">
+    <p>Tab Panel3</p>
+  </eui-tab-panel>
+  <eui-tab-panel [title]="'Help'" [closable]="true" iconCls="icon-help">
+    <p>This is the help content.</p>
+  </eui-tab-panel>
+</eui-tabs>

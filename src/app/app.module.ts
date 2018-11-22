@@ -15,14 +15,19 @@ import { TemplateComponent } from './tabs/template/template.component';
 import { ScrollableComponent } from './tabs/scrollable/scrollable.component';
 import { DynamicContentComponent } from './tabs/dynamic-content/dynamic-content.component';
 
+import { TabDetailComponent } from './tabs/dynamic-content/tab-detail.component';
+import { TabDirective } from './tabs/dynamic-content/tab.directive';
+import { Dy1Component } from './tabs/dynamic-content/dy1.component';
+import { Dy2Component } from './tabs/dynamic-content/dy2.component';
+
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
-  { path: 'tabs/basic', component: BasicComponent }
-  { path: 'tabs/dynamic-content', component: DynamicContentComponent }
-  { path: 'tabs/position', component: PositionComponent }
-  { path: 'tabs/scrollable', component: ScrollableComponent }
-  { path: 'tabs/style', component: StyleComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'tabs/basic', component: BasicComponent },
+  { path: 'tabs/dynamic-content', component: DynamicContentComponent },
+  { path: 'tabs/position', component: PositionComponent },
+  { path: 'tabs/scrollable', component: ScrollableComponent },
+  { path: 'tabs/style', component: StyleComponent },
   { path: 'tabs/template', component: TemplateComponent }
 ];
 
@@ -35,7 +40,11 @@ const appRoutes: Routes = [
     StyleComponent,
     TemplateComponent,
     ScrollableComponent,
-    DynamicContentComponent
+    DynamicContentComponent,
+    TabDetailComponent,
+    TabDirective,
+    Dy1Component,
+    Dy2Component
   ],
   imports: [
     FormsModule,
@@ -48,6 +57,7 @@ const appRoutes: Routes = [
       { enableTracing: true }
     )
   ],
+  entryComponents: [Dy1Component, Dy2Component],
   providers: [],
   bootstrap: [AppComponent]
 })

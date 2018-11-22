@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PositionComponent implements OnInit {
 
+  position = 'top';
+  positions = [
+    { value: 'top', text: 'Top' },
+    { value: 'bottom', text: 'Bottom' },
+    { value: 'left', text: 'Left' },
+    { value: 'right', text: 'Right' }
+  ];
+
   constructor() { }
 
   ngOnInit() {

@@ -1,3 +1,6 @@
-<p>
-  scrollable works!
-</p>
+<h2>Scrollable Tabs</h2>
+<eui-tabs [scrollable]="true" style="width:600px;height:250px">
+  <eui-tab-panel *ngFor="let lang of languages" [title]="lang" [closable]="true">
+    <div style="padding:20px">{{lang}}</div>
+  </eui-tab-panel>
+</eui-tabs>
