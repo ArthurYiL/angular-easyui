@@ -12,7 +12,8 @@ import { BasicComponent } from './radio-button/basic/basic.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'radio-button/basic', component: BasicComponent }
 ];
 
 @NgModule({
