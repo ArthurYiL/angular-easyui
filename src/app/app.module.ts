@@ -8,6 +8,12 @@ import { EasyUIModule } from 'ng-easyui/components/easyui/easyui.module';
 
 import { AppComponent } from './app.component';
 import { OfficialComponent } from './official/official.component';
+import { BasicComponent } from './tree-grid/basic/basic.component';
+import { ColumnGroupComponent } from './tree-grid/column-group/column-group.component';
+import { FrozenColumnComponent } from './tree-grid/frozen-column/frozen-column.component';
+import { FooterRowsComponent } from './tree-grid/footer-rows/footer-rows.component';
+import { CheckBoxComponent } from './tree-grid/check-box/check-box.component';
+import { TemplateComponent } from './tree-grid/template/template.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
@@ -17,7 +23,13 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    OfficialComponent
+    OfficialComponent,
+    BasicComponent,
+    ColumnGroupComponent,
+    FrozenColumnComponent,
+    FooterRowsComponent,
+    CheckBoxComponent,
+    TemplateComponent
   ],
   imports: [
     FormsModule,
