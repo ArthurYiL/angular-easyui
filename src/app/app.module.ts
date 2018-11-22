@@ -15,7 +15,11 @@ import { TriggerEventComponent } from './tooltip/trigger-event/trigger-event.com
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'tooltip/basic', component: BasicComponent },
+  { path: 'tooltip/content', component: ContentComponent },
+  { path: 'tooltip/position', component: PositionComponent },
+  { path: 'tooltip/trigger-event', component: TriggerEventComponent }
 ];
 
 @NgModule({
