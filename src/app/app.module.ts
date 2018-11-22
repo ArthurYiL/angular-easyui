@@ -12,7 +12,8 @@ import { BasicComponent } from './resizable/basic/basic.component';
 
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
-  { path: 'official', component: OfficialComponent }
+  { path: 'official', component: OfficialComponent },
+  { path: 'resizable/basic', component: BasicComponent }
 ];
 
 @NgModule({
