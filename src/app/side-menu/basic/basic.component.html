@@ -1,3 +1,5 @@
-<p>
-  basic works!
-</p>
+<h2>Basic SideMenu</h2>
+<eui-linkbutton (click)="toggle()" style="margin-bottom:20px">Toggle</eui-linkbutton>
+<eui-sidemenu [style.width.px]="width" [data]="menus" [collapsed]="collapsed" [(selection)]="selection">
+</eui-sidemenu>
+<p *ngIf="selection">You selected: {{selection.text}}</p>
