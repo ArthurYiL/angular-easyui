@@ -1,27 +1,22 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from './data.service';
 
 @Component({
   selector: 'app-first-day-of-week',
   templateUrl: './first-day-of-week.component.html',
-  styleUrls: ['./first-day-of-week.component.css']
+  styleUrls: ['./first-day-of-week.component.css'],
+  providers: [DataService]
 })
 export class FirstDayOfWeekComponent implements OnInit {
 
   value = new Date();
   firstDay: number = 0;
-  data = [
-    { value: 0, text: 'Sunday' },
-    { value: 1, text: 'Monday' },
-    { value: 2, text: 'Tuesday' },
-    { value: 3, text: 'Wednesday' },
-    { value: 4, text: 'Thursday' },
-    { value: 5, text: 'Friday' },
-    { value: 6, text: 'Saturday' }
-  ];
+  data = null;
 
-  constructor() { }
+  constructor(public dataService: DataService) { }
 
   ngOnInit() {
+    this.data = this.dataService.getData().subscribe(x => this.data = x);
   }
 
 }
