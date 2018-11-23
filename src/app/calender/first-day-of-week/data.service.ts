@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable()
 export class DataService {
 
-    configUrl = 'assets/first-day-of-week/first-day-of-week.json';
+    configUrl = 'assets/calender/first-day-of-week.json';
 
     constructor(private http: HttpClient) { }
 
