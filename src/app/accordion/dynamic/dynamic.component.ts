@@ -35,7 +35,7 @@ export class DynamicComponent implements OnInit {
   constructor(public dataService: DataService) { }
 
   ngOnInit() {
-    this.panels = this.dataService.getData().subscribe(x => this.panels = x);
+    this.dataService.getData().subscribe(x => this.panels = x);
   }
 
 }

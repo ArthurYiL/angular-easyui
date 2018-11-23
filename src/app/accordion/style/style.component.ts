@@ -14,7 +14,7 @@ export class StyleComponent implements OnInit {
   constructor(public dataService: DataService) { }
 
   ngOnInit() {
-    this.menus = this.dataService.getData().subscribe(x => this.menus = x);
+    this.dataService.getData().subscribe(x => this.menus = x);
   }
 
 }

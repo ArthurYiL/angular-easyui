@@ -14,7 +14,7 @@ export class CustomComponent implements OnInit {
   constructor(public dataService: DataService) { }
 
   ngOnInit() {
-    this.treeData = this.dataService.getData().subscribe(x => this.treeData = x);
+    this.dataService.getData().subscribe(x => this.treeData = x);
   }
 
 }
