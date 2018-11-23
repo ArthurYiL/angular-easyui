@@ -18,11 +18,11 @@ import { StyleComponent } from './accordion/style/style.component';
 const appRoutes: Routes = [
   { path: '', component: OfficialComponent },
   { path: 'official', component: OfficialComponent },
-  { path: 'basic', component: BasicComponent },
-  { path: 'custom', component: CustomComponent },
-  { path: 'dynamic', component: DynamicComponent },
-  { path: 'multiple', component: MultipleComponent },
-  { path: 'style', component: StyleComponent }
+  { path: 'accordion/basic', component: BasicComponent },
+  { path: 'accordion/custom', component: CustomComponent },
+  { path: 'accordion/dynamic', component: DynamicComponent },
+  { path: 'accordion/multiple', component: MultipleComponent },
+  { path: 'accordion/style', component: StyleComponent }
 ];
 
 @NgModule({
