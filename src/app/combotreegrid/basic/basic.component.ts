@@ -16,7 +16,7 @@ export class BasicComponent implements OnInit {
   constructor(public dataService: DataService) { }
 
   ngOnInit() {
-    this.data = this.dataService.getData();
+    this.data = this.dataService.getData().subscribe(x => this.data = x);
   }
 
 
