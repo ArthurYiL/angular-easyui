@@ -1,19 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from './data.service';
 
 @Component({
   selector: 'app-dynamic',
   templateUrl: './dynamic.component.html',
-  styleUrls: ['./dynamic.component.css']
+  styleUrls: ['./dynamic.component.css'],
+  providers: [DataService]
 })
 export class DynamicComponent implements OnInit {
 
   panelIndex: number = 4;
   selectedIndex: number = 0;
-  panels = [
-    { title: 'Title1', content: 'Content1' },
-    { title: 'Title2', content: 'Content2' },
-    { title: 'Title3', content: 'Content3' }
-  ];
+  panels = null;
 
   add() {
     if (this.panels.length >= 6) {
@@ -34,9 +32,10 @@ export class DynamicComponent implements OnInit {
     this.selectedIndex = 0;
   }
 
-  constructor() { }
+  constructor(public dataService: DataService) { }
 
   ngOnInit() {
+    this.panels = this.dataService.getData().subscribe(x => this.panels = x);
   }
 
 }
