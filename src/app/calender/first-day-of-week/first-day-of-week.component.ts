@@ -16,7 +16,7 @@ export class FirstDayOfWeekComponent implements OnInit {
   constructor(public dataService: DataService) { }
 
   ngOnInit() {
-    this.data = this.dataService.getData().subscribe(x => this.data = x);
+    this.dataService.getData().subscribe(x => this.data = x);
   }
 
 }
