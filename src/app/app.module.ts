@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpModule } from '@angular/http';
 import { EasyUIModule } from 'ng-easyui/components/easyui/easyui.module';
+import { NgxEchartsModule } from 'ngx-echarts';
 
 import { AppComponent } from './app.component';
 import { OfficialComponent } from './official/official.component';
@@ -43,6 +44,7 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     HttpModule,
     EasyUIModule,
+    NgxEchartsModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true }
