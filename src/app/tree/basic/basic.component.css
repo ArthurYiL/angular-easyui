@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+}
+
+.sider {
+    width: 15%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.content {
+    display: inline-block;
+    width: 85%;
+    vertical-align: top;
+}

@@ -1,3 +1,23 @@
 <h2>Basic Tree</h2>
-<eui-tree [data]="data" [(selection)]="selection"></eui-tree>
-<p *ngIf="selection">Selected: {{selection.text}}</p>
+<div class="container">
+    <div class="sider">
+        <eui-tree [data]="data" [(selection)]="selection"></eui-tree>
+    </div>
+    <div class="content">
+        <ng-container *ngIf="selection">
+            <span [ngSwitch]="selection.text">
+                <p *ngSwitchCase="'Java'">
+                    Selected: {{selection.text}}
+                    <app-official></app-official>
+                </p>
+                <p *ngSwitchCase="'index.html'">
+                    Selected: {{selection.text}}
+                    <app-check-box></app-check-box>
+                </p>
+                <p *ngSwitchDefault>
+                    Selected: {{selection.text}}
+                </p>
+            </span>
+        </ng-container>
+    </div>
+</div>
