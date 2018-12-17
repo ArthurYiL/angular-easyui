@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~ng-easyui/themes/material/easyui.css';
+/* @import '~ng-easyui/themes/black/easyui.css'; */
+/* @import '~ng-easyui/themes/bootstrap/easyui.css'; */
+/* @import '~ng-easyui/themes/default/easyui.css'; */
+/* @import '~ng-easyui/themes/gray/easyui.css'; */
+/* @import '~ng-easyui/themes/material-teal/easyui.css'; */
+/* @import '~ng-easyui/themes/metro/easyui.css'; */
 @import '~ng-easyui/themes/angular.css';
 @import '~ng-easyui/themes/icon.css';
